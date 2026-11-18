@@ -1,0 +1,71 @@
+{
+ "program": "Creatinine.run (lean/Creatinine.lean), executed through lean/CrOracle.lean",
+ "finding": "the record holds two final creatinine results, the later taken at most 48 h after the earlier, with the later at least 0.30 mg/dL higher (KDIGO 2012 criterion 1 only; not an AKI diagnosis)",
+ "rows": {
+  "total": 6123,
+  "used": 6118,
+  "excluded_by_reason": {
+   "unit_missing": 4,
+   "unit_Ratio": 1
+  },
+  "used_rows_by_final_status": {
+   "True": 6118
+  }
+ },
+ "patients": 100,
+ "patients_with_any_used_row": 100,
+ "decision_points": 6076,
+ "decision_point_outcomes": {
+  "noRise": 2543,
+  "rise": 3533
+ },
+ "full_record": {
+  "patients_with_a_rise": 35,
+  "patients_without": 65
+ },
+ "first_establishment": {
+  "patients": 35,
+  "decision_points": 35,
+  "at_the_patients_first_report_moment": 0,
+  "delay_from_later_specimen_taken_to_record_establishing_minutes": {
+   "n": 35,
+   "min": 37.0,
+   "q1": 51.5,
+   "median": 63.0,
+   "q3": 79.5,
+   "max": 113.0
+  },
+  "later_specimen_of_witness_pair_not_the_most_recently_taken_specimen_in_chart": 0,
+  "no_result_reported_at_that_moment_was_the_most_recently_taken_specimen": 0,
+  "rise_size_mg_dL_histogram": {
+   "0.3-0.4": 22,
+   "0.4-0.5": 6,
+   "0.5-0.6": 3,
+   "0.7-0.8": 1,
+   "0.8-0.9": 1,
+   "1.4-1.5": 1,
+   "2.0+": 1
+  },
+  "hours_between_specimens_histogram": {
+   "0-6h": 5,
+   "6-12h": 4,
+   "12-18h": 3,
+   "18-24h": 1,
+   "24-30h": 7,
+   "30-36h": 4,
+   "36-42h": 2,
+   "42-48h": 9
+  }
+ },
+ "after_establishment": {
+  "report_moments_where_first_rise_time_moved_earlier": 0,
+  "report_moments_where_first_rise_time_moved_later": 0
+ },
+ "cross_check_brute_force_python": {
+  "checked": 6176,
+  "agree": 6176,
+  "disagree": 0,
+  "covers": "every decision point plus every full record; first-rise time and witness pair validity"
+ },
+ "code_label_note": "local FHIR server, Observation?code=CR: code.coding = system http://loinc.org, code 'CR', display 'CR', text 'CR'; category 'laboratory'; unit mg/dL; no specimen element. 'CR' is not a LOINC code and nothing in the resource says serum or plasma."
+}

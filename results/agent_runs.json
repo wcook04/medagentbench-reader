@@ -1,0 +1,2206 @@
+{
+ "model": "deepseek/deepseek-v4.1-flash-1017",
+ "grader_sha256": "67d19da263ac92c1b7075b3218ace3a4bd19b206a06fc7aebcc897dc39625419",
+ "benchmark_commit": "99260117137b09f04837a8c18d18a1107efa55ae",
+ "batches": [
+  {
+   "file": "conflict",
+   "set": "conflict",
+   "context": "none",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 80,
+   "patients": 18,
+   "completed": 79,
+   "content_correct": 72,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 67,
+   "stanford_orders_only_route_as_plain_string": 71,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 67,
+   "content_correct_and_stanford_orders_only_plain_route": 67,
+   "stanford_orders_only_plain_route_but_content_wrong": 4,
+   "reasons": {
+    "correct": 72,
+    "placed_orders_when_none_required": 7,
+    "did_not_finish": 1
+   },
+   "searches": {
+    "other_search": 13,
+    "other_search, searched_K": 64,
+    "followed_next_page, searched_K": 1,
+    "searched_K": 1,
+    "followed_next_page, other_search, searched_K": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 2
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 44
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 4
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 26
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "11 to 20",
+     "correct": 1,
+     "runs": 3
+    },
+    {
+     "results": "21 to 40",
+     "correct": 4,
+     "runs": 6
+    },
+    {
+     "results": "41 to 80",
+     "correct": 17,
+     "runs": 18
+    },
+    {
+     "results": "81 to 160",
+     "correct": 28,
+     "runs": 30
+    },
+    {
+     "results": "over 160",
+     "correct": 21,
+     "runs": 22
+    }
+   ],
+   "conflict_choice": {
+    "closing_message_mentions_the_disagreement": 0,
+    "placed_no_order": 73,
+    "placed_other_orders": 2,
+    "dosed_from_the_lower_value": 3,
+    "dosed_from_the_higher_value": 2
+   },
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0771
+  },
+  {
+   "file": "conflictHard_contract",
+   "set": "conflict",
+   "context": "contract",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 29,
+   "patients": 16,
+   "completed": 29,
+   "content_correct": 29,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 5,
+   "stanford_orders_only_route_as_plain_string": 5,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 5,
+   "content_correct_and_stanford_orders_only_plain_route": 5,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 29
+   },
+   "searches": {
+    "searched_K": 25,
+    "no_search": 4
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 7
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 12
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 10
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 3,
+     "runs": 3
+    },
+    {
+     "results": "11 to 20",
+     "correct": 4,
+     "runs": 4
+    },
+    {
+     "results": "21 to 40",
+     "correct": 4,
+     "runs": 4
+    },
+    {
+     "results": "41 to 80",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "81 to 160",
+     "correct": 9,
+     "runs": 9
+    },
+    {
+     "results": "over 160",
+     "correct": 4,
+     "runs": 4
+    }
+   ],
+   "conflict_choice": {
+    "closing_message_mentions_the_disagreement": 29,
+    "placed_no_order": 29
+   },
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0191
+  },
+  {
+   "file": "conflictHard_table",
+   "set": "conflict",
+   "context": "table",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 29,
+   "patients": 16,
+   "completed": 29,
+   "content_correct": 4,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 4,
+   "stanford_orders_only_route_as_plain_string": 21,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 4,
+   "content_correct_and_stanford_orders_only_plain_route": 4,
+   "stanford_orders_only_plain_route_but_content_wrong": 17,
+   "reasons": {
+    "placed_orders_when_none_required": 25,
+    "correct": 4
+   },
+   "searches": {
+    "searched_K": 25,
+    "no_search": 3,
+    "searched_K, sorted": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 4
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 3
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 11
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 1
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 10
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 1,
+     "runs": 3
+    },
+    {
+     "results": "11 to 20",
+     "correct": 2,
+     "runs": 4
+    },
+    {
+     "results": "21 to 40",
+     "correct": 0,
+     "runs": 4
+    },
+    {
+     "results": "41 to 80",
+     "correct": 1,
+     "runs": 5
+    },
+    {
+     "results": "81 to 160",
+     "correct": 0,
+     "runs": 9
+    },
+    {
+     "results": "over 160",
+     "correct": 0,
+     "runs": 4
+    }
+   ],
+   "conflict_choice": {
+    "closing_message_mentions_the_disagreement": 0,
+    "dosed_from_the_higher_value": 8,
+    "dosed_from_the_lower_value": 17,
+    "placed_no_order": 4
+   },
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0556
+  },
+  {
+   "file": "conflict_table",
+   "set": "conflict",
+   "context": "table",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 80,
+   "patients": 18,
+   "completed": 74,
+   "content_correct": 64,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 63,
+   "stanford_orders_only_route_as_plain_string": 69,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 63,
+   "content_correct_and_stanford_orders_only_plain_route": 63,
+   "stanford_orders_only_plain_route_but_content_wrong": 6,
+   "reasons": {
+    "correct": 64,
+    "did_not_finish": 6,
+    "placed_orders_when_none_required": 10
+   },
+   "searches": {
+    "searched_K": 78,
+    "no_search": 1,
+    "date_filter, searched_K": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 2
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 11
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 35
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 3
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 27
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "11 to 20",
+     "correct": 1,
+     "runs": 3
+    },
+    {
+     "results": "21 to 40",
+     "correct": 4,
+     "runs": 6
+    },
+    {
+     "results": "41 to 80",
+     "correct": 14,
+     "runs": 18
+    },
+    {
+     "results": "81 to 160",
+     "correct": 25,
+     "runs": 30
+    },
+    {
+     "results": "over 160",
+     "correct": 19,
+     "runs": 22
+    }
+   ],
+   "conflict_choice": {
+    "closing_message_mentions_the_disagreement": 0,
+    "placed_no_order": 70,
+    "dosed_from_the_lower_value": 9,
+    "dosed_from_the_higher_value": 1
+   },
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.1445
+  },
+  {
+   "file": "control_pilot",
+   "set": "control",
+   "context": "none",
+   "records": "released server, local copy",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 30,
+   "patients": 30,
+   "completed": 30,
+   "content_correct": 30,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 29,
+   "stanford_orders_only_route_as_plain_string": 30,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 29,
+   "content_correct_and_stanford_orders_only_plain_route": 30,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 30
+   },
+   "searches": {
+    "other_search, searched_K": 19,
+    "other_search": 1,
+    "searched_K": 10
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 10
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 12
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 8
+    }
+   ],
+   "by_required_dose_mEq": {
+    "40": {
+     "correct": 1,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 9,
+     "runs": 9
+    },
+    {
+     "results": "11 to 20",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "21 to 40",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "41 to 80",
+     "correct": 11,
+     "runs": 11
+    },
+    {
+     "results": "81 to 160",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "over 160",
+     "correct": 3,
+     "runs": 3
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0192
+  },
+  {
+   "file": "control_repeat",
+   "set": "control",
+   "context": "none",
+   "records": "released server, local copy",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 30,
+   "patients": 30,
+   "completed": 30,
+   "content_correct": 30,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 29,
+   "stanford_orders_only_route_as_plain_string": 30,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 29,
+   "content_correct_and_stanford_orders_only_plain_route": 30,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 30
+   },
+   "searches": {
+    "searched_K": 11,
+    "other_search, searched_K": 18,
+    "followed_next_page, other_search, searched_K": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 10
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 12
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 8
+    }
+   ],
+   "by_required_dose_mEq": {
+    "40": {
+     "correct": 1,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 9,
+     "runs": 9
+    },
+    {
+     "results": "11 to 20",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "21 to 40",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "41 to 80",
+     "correct": 11,
+     "runs": 11
+    },
+    {
+     "results": "81 to 160",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "over 160",
+     "correct": 3,
+     "runs": 3
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0205
+  },
+  {
+   "file": "control_via_standin",
+   "set": "control",
+   "context": "none",
+   "records": "stand-in holding the released cases' full charts",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 30,
+   "patients": 30,
+   "completed": 30,
+   "content_correct": 30,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 29,
+   "stanford_orders_only_route_as_plain_string": 30,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 29,
+   "content_correct_and_stanford_orders_only_plain_route": 30,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 30
+   },
+   "searches": {
+    "searched_K": 15,
+    "other_search, searched_K": 13,
+    "followed_next_page, other_search, searched_K": 1,
+    "followed_next_page, searched_K": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 10
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 12
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 8
+    }
+   ],
+   "by_required_dose_mEq": {
+    "40": {
+     "correct": 1,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 9,
+     "runs": 9
+    },
+    {
+     "results": "11 to 20",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "21 to 40",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "41 to 80",
+     "correct": 11,
+     "runs": 11
+    },
+    {
+     "results": "81 to 160",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "over 160",
+     "correct": 3,
+     "runs": 3
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.02
+  },
+  {
+   "file": "errLow_contract",
+   "set": "notLow",
+   "context": "contract",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 40,
+   "patients": 22,
+   "completed": 40,
+   "content_correct": 40,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 2,
+   "stanford_orders_only_route_as_plain_string": 2,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 2,
+   "content_correct_and_stanford_orders_only_plain_route": 2,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 40
+   },
+   "searches": {
+    "searched_K": 33,
+    "no_search": 6,
+    "date_filter, searched_K": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 6
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 33
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 1
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "11 to 20",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "21 to 40",
+     "correct": 3,
+     "runs": 3
+    },
+    {
+     "results": "41 to 80",
+     "correct": 7,
+     "runs": 7
+    },
+    {
+     "results": "81 to 160",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "over 160",
+     "correct": 19,
+     "runs": 19
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": true,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0294
+  },
+  {
+   "file": "errLow_table",
+   "set": "notLow",
+   "context": "table",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 40,
+   "patients": 22,
+   "completed": 40,
+   "content_correct": 40,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 2,
+   "stanford_orders_only_route_as_plain_string": 2,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 2,
+   "content_correct_and_stanford_orders_only_plain_route": 2,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 40
+   },
+   "searches": {
+    "searched_K": 39,
+    "no_search": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 6
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 33
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 1
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "11 to 20",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "21 to 40",
+     "correct": 3,
+     "runs": 3
+    },
+    {
+     "results": "41 to 80",
+     "correct": 7,
+     "runs": 7
+    },
+    {
+     "results": "81 to 160",
+     "correct": 5,
+     "runs": 5
+    },
+    {
+     "results": "over 160",
+     "correct": 19,
+     "runs": 19
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": true,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0343
+  },
+  {
+   "file": "errNormal_contract",
+   "set": "replace",
+   "context": "contract",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 40,
+   "patients": 22,
+   "completed": 40,
+   "content_correct": 39,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 1,
+   "stanford_orders_only_route_as_plain_string": 7,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 6,
+   "stanford_orders_only_plain_route_but_content_wrong": 1,
+   "reasons": {
+    "correct": 39,
+    "no_orders": 1
+   },
+   "searches": {
+    "no_search": 13,
+    "searched_K": 27
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 5
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 1
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 31
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 3
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 14,
+     "runs": 15
+    },
+    "20": {
+     "correct": 11,
+     "runs": 11
+    },
+    "30": {
+     "correct": 4,
+     "runs": 4
+    },
+    "40": {
+     "correct": 3,
+     "runs": 3
+    },
+    "50": {
+     "correct": 2,
+     "runs": 2
+    },
+    "60": {
+     "correct": 1,
+     "runs": 1
+    },
+    "70": {
+     "correct": 2,
+     "runs": 2
+    },
+    "80": {
+     "correct": 2,
+     "runs": 2
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "11 to 20",
+     "correct": 4,
+     "runs": 4
+    },
+    {
+     "results": "21 to 40",
+     "correct": 8,
+     "runs": 8
+    },
+    {
+     "results": "41 to 80",
+     "correct": 9,
+     "runs": 9
+    },
+    {
+     "results": "81 to 160",
+     "correct": 4,
+     "runs": 4
+    },
+    {
+     "results": "over 160",
+     "correct": 13,
+     "runs": 14
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": true,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0636
+  },
+  {
+   "file": "errNormal_table",
+   "set": "replace",
+   "context": "table",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 40,
+   "patients": 22,
+   "completed": 40,
+   "content_correct": 40,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 0,
+   "stanford_orders_only_route_as_plain_string": 6,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 6,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 40
+   },
+   "searches": {
+    "searched_K": 39,
+    "no_search": 1
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 5
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 32
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 3
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 15,
+     "runs": 15
+    },
+    "20": {
+     "correct": 11,
+     "runs": 11
+    },
+    "30": {
+     "correct": 4,
+     "runs": 4
+    },
+    "40": {
+     "correct": 3,
+     "runs": 3
+    },
+    "50": {
+     "correct": 2,
+     "runs": 2
+    },
+    "60": {
+     "correct": 1,
+     "runs": 1
+    },
+    "70": {
+     "correct": 2,
+     "runs": 2
+    },
+    "80": {
+     "correct": 2,
+     "runs": 2
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 1,
+     "runs": 1
+    },
+    {
+     "results": "11 to 20",
+     "correct": 4,
+     "runs": 4
+    },
+    {
+     "results": "21 to 40",
+     "correct": 8,
+     "runs": 8
+    },
+    {
+     "results": "41 to 80",
+     "correct": 9,
+     "runs": 9
+    },
+    {
+     "results": "81 to 160",
+     "correct": 4,
+     "runs": 4
+    },
+    {
+     "results": "over 160",
+     "correct": 14,
+     "runs": 14
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": true,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0606
+  },
+  {
+   "file": "notLow",
+   "set": "notLow",
+   "context": "none",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 120,
+   "patients": 38,
+   "completed": 120,
+   "content_correct": 118,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 118,
+   "stanford_orders_only_route_as_plain_string": 118,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 118,
+   "content_correct_and_stanford_orders_only_plain_route": 118,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 118,
+    "placed_orders_when_none_required": 2
+   },
+   "searches": {
+    "other_search": 13,
+    "other_search, searched_K": 100,
+    "followed_next_page, other_search, searched_K": 4,
+    "searched_K": 3
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 15
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 74
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 29
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 8,
+     "runs": 8
+    },
+    {
+     "results": "11 to 20",
+     "correct": 7,
+     "runs": 7
+    },
+    {
+     "results": "21 to 40",
+     "correct": 12,
+     "runs": 12
+    },
+    {
+     "results": "41 to 80",
+     "correct": 20,
+     "runs": 21
+    },
+    {
+     "results": "81 to 160",
+     "correct": 25,
+     "runs": 26
+    },
+    {
+     "results": "over 160",
+     "correct": 46,
+     "runs": 46
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0861
+  },
+  {
+   "file": "notLow_table",
+   "set": "notLow",
+   "context": "table",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 120,
+   "patients": 38,
+   "completed": 117,
+   "content_correct": 117,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 117,
+   "stanford_orders_only_route_as_plain_string": 117,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 117,
+   "content_correct_and_stanford_orders_only_plain_route": 117,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 117,
+    "did_not_finish": 3
+   },
+   "searches": {
+    "searched_K": 115,
+    "no_search": 5
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 15
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 3
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 73
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 29
+    }
+   ],
+   "by_required_dose_mEq": null,
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 8,
+     "runs": 8
+    },
+    {
+     "results": "11 to 20",
+     "correct": 7,
+     "runs": 7
+    },
+    {
+     "results": "21 to 40",
+     "correct": 12,
+     "runs": 12
+    },
+    {
+     "results": "41 to 80",
+     "correct": 20,
+     "runs": 21
+    },
+    {
+     "results": "81 to 160",
+     "correct": 26,
+     "runs": 26
+    },
+    {
+     "results": "over 160",
+     "correct": 44,
+     "runs": 46
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.1212
+  },
+  {
+   "file": "replace",
+   "set": "replace",
+   "context": "none",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 629,
+   "patients": 59,
+   "completed": 629,
+   "content_correct": 259,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 0,
+   "stanford_orders_only_route_as_plain_string": 255,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 255,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "no_orders": 302,
+    "correct": 259,
+    "wrong_dose": 68
+   },
+   "searches": {
+    "other_search": 84,
+    "other_search, searched_K": 493,
+    "searched_K": 49,
+    "followed_next_page, other_search, searched_K": 3
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 20
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 109
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 330
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 19
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 20
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 131
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 70,
+     "runs": 203
+    },
+    "20": {
+     "correct": 68,
+     "runs": 160
+    },
+    "30": {
+     "correct": 40,
+     "runs": 88
+    },
+    "40": {
+     "correct": 24,
+     "runs": 60
+    },
+    "50": {
+     "correct": 25,
+     "runs": 52
+    },
+    "60": {
+     "correct": 13,
+     "runs": 24
+    },
+    "70": {
+     "correct": 10,
+     "runs": 22
+    },
+    "80": {
+     "correct": 3,
+     "runs": 7
+    },
+    "90": {
+     "correct": 3,
+     "runs": 4
+    },
+    "100": {
+     "correct": 2,
+     "runs": 4
+    },
+    "110": {
+     "correct": 1,
+     "runs": 2
+    },
+    "130": {
+     "correct": 0,
+     "runs": 1
+    },
+    "140": {
+     "correct": 0,
+     "runs": 1
+    },
+    "350": {
+     "correct": 0,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 57,
+     "runs": 66
+    },
+    {
+     "results": "11 to 20",
+     "correct": 52,
+     "runs": 63
+    },
+    {
+     "results": "21 to 40",
+     "correct": 74,
+     "runs": 116
+    },
+    {
+     "results": "41 to 80",
+     "correct": 36,
+     "runs": 97
+    },
+    {
+     "results": "81 to 160",
+     "correct": 25,
+     "runs": 97
+    },
+    {
+     "results": "over 160",
+     "correct": 15,
+     "runs": 190
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.6248
+  },
+  {
+   "file": "replace_high",
+   "set": "replace",
+   "context": "none",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "high",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 40,
+   "patients": 22,
+   "completed": 40,
+   "content_correct": 10,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 0,
+   "stanford_orders_only_route_as_plain_string": 10,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 10,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "no_orders": 24,
+    "correct": 10,
+    "wrong_dose": 6
+   },
+   "searches": {
+    "other_search": 16,
+    "other_search, searched_K": 20,
+    "followed_next_page, other_search, searched_K": 4
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 3
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 23
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 3
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 4
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 5
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 4,
+     "runs": 15
+    },
+    "20": {
+     "correct": 2,
+     "runs": 11
+    },
+    "30": {
+     "correct": 1,
+     "runs": 4
+    },
+    "40": {
+     "correct": 1,
+     "runs": 3
+    },
+    "50": {
+     "correct": 0,
+     "runs": 2
+    },
+    "60": {
+     "correct": 1,
+     "runs": 1
+    },
+    "70": {
+     "correct": 1,
+     "runs": 2
+    },
+    "80": {
+     "correct": 0,
+     "runs": 2
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 0,
+     "runs": 1
+    },
+    {
+     "results": "11 to 20",
+     "correct": 2,
+     "runs": 4
+    },
+    {
+     "results": "21 to 40",
+     "correct": 4,
+     "runs": 9
+    },
+    {
+     "results": "41 to 80",
+     "correct": 3,
+     "runs": 8
+    },
+    {
+     "results": "81 to 160",
+     "correct": 1,
+     "runs": 5
+    },
+    {
+     "results": "over 160",
+     "correct": 0,
+     "runs": 13
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.0438
+  },
+  {
+   "file": "replace_hint",
+   "set": "replace",
+   "context": "hint",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 200,
+   "patients": 43,
+   "completed": 200,
+   "content_correct": 142,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 0,
+   "stanford_orders_only_route_as_plain_string": 138,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 138,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "no_orders": 57,
+    "correct": 142,
+    "wrong_product_unit_or_route": 1
+   },
+   "searches": {
+    "other_search": 57,
+    "other_search, searched_K, set_count, sorted": 51,
+    "searched_K, set_count, sorted": 92
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 10
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 28
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 29
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 83
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 19
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 31
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 42,
+     "runs": 63
+    },
+    "20": {
+     "correct": 31,
+     "runs": 44
+    },
+    "30": {
+     "correct": 26,
+     "runs": 32
+    },
+    "40": {
+     "correct": 11,
+     "runs": 19
+    },
+    "50": {
+     "correct": 16,
+     "runs": 18
+    },
+    "60": {
+     "correct": 4,
+     "runs": 7
+    },
+    "70": {
+     "correct": 8,
+     "runs": 9
+    },
+    "80": {
+     "correct": 1,
+     "runs": 2
+    },
+    "90": {
+     "correct": 0,
+     "runs": 1
+    },
+    "100": {
+     "correct": 2,
+     "runs": 2
+    },
+    "130": {
+     "correct": 0,
+     "runs": 1
+    },
+    "140": {
+     "correct": 1,
+     "runs": 1
+    },
+    "350": {
+     "correct": 0,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 12,
+     "runs": 17
+    },
+    {
+     "results": "11 to 20",
+     "correct": 16,
+     "runs": 21
+    },
+    {
+     "results": "21 to 40",
+     "correct": 18,
+     "runs": 37
+    },
+    {
+     "results": "41 to 80",
+     "correct": 23,
+     "runs": 31
+    },
+    {
+     "results": "81 to 160",
+     "correct": 24,
+     "runs": 30
+    },
+    {
+     "results": "over 160",
+     "correct": 49,
+     "runs": 64
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.1677
+  },
+  {
+   "file": "replace_newest",
+   "set": "replace",
+   "context": "none",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": true,
+   "runs": 629,
+   "patients": 59,
+   "completed": 629,
+   "content_correct": 531,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 0,
+   "stanford_orders_only_route_as_plain_string": 521,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 521,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "no_orders": 98,
+    "correct": 531
+   },
+   "searches": {
+    "other_search": 98,
+    "other_search, searched_K": 492,
+    "searched_K": 39
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 15
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 114
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 66
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 283
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 17
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 134
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 172,
+     "runs": 203
+    },
+    "20": {
+     "correct": 141,
+     "runs": 160
+    },
+    "30": {
+     "correct": 74,
+     "runs": 88
+    },
+    "40": {
+     "correct": 48,
+     "runs": 60
+    },
+    "50": {
+     "correct": 44,
+     "runs": 52
+    },
+    "60": {
+     "correct": 21,
+     "runs": 24
+    },
+    "70": {
+     "correct": 15,
+     "runs": 22
+    },
+    "80": {
+     "correct": 4,
+     "runs": 7
+    },
+    "90": {
+     "correct": 4,
+     "runs": 4
+    },
+    "100": {
+     "correct": 3,
+     "runs": 4
+    },
+    "110": {
+     "correct": 2,
+     "runs": 2
+    },
+    "130": {
+     "correct": 1,
+     "runs": 1
+    },
+    "140": {
+     "correct": 1,
+     "runs": 1
+    },
+    "350": {
+     "correct": 1,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 57,
+     "runs": 66
+    },
+    {
+     "results": "11 to 20",
+     "correct": 57,
+     "runs": 63
+    },
+    {
+     "results": "21 to 40",
+     "correct": 101,
+     "runs": 116
+    },
+    {
+     "results": "41 to 80",
+     "correct": 88,
+     "runs": 97
+    },
+    {
+     "results": "81 to 160",
+     "correct": 78,
+     "runs": 97
+    },
+    {
+     "results": "over 160",
+     "correct": 150,
+     "runs": 190
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.7203
+  },
+  {
+   "file": "replace_repeat",
+   "set": "replace",
+   "context": "none",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 100,
+   "patients": 35,
+   "completed": 100,
+   "content_correct": 36,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 0,
+   "stanford_orders_only_route_as_plain_string": 35,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 35,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 36,
+    "wrong_dose": 17,
+    "no_orders": 47
+   },
+   "searches": {
+    "other_search, searched_K": 77,
+    "other_search": 14,
+    "searched_K": 9
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 5
+    },
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 12
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 57
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 22
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 11,
+     "runs": 36
+    },
+    "20": {
+     "correct": 9,
+     "runs": 26
+    },
+    "30": {
+     "correct": 3,
+     "runs": 9
+    },
+    "40": {
+     "correct": 5,
+     "runs": 8
+    },
+    "50": {
+     "correct": 3,
+     "runs": 10
+    },
+    "60": {
+     "correct": 1,
+     "runs": 1
+    },
+    "70": {
+     "correct": 3,
+     "runs": 5
+    },
+    "80": {
+     "correct": 0,
+     "runs": 2
+    },
+    "100": {
+     "correct": 1,
+     "runs": 1
+    },
+    "130": {
+     "correct": 0,
+     "runs": 1
+    },
+    "350": {
+     "correct": 0,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 6,
+     "runs": 8
+    },
+    {
+     "results": "11 to 20",
+     "correct": 6,
+     "runs": 9
+    },
+    {
+     "results": "21 to 40",
+     "correct": 11,
+     "runs": 21
+    },
+    {
+     "results": "41 to 80",
+     "correct": 3,
+     "runs": 14
+    },
+    {
+     "results": "81 to 160",
+     "correct": 5,
+     "runs": 17
+    },
+    {
+     "results": "over 160",
+     "correct": 5,
+     "runs": 31
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.1052
+  },
+  {
+   "file": "replace_table",
+   "set": "replace",
+   "context": "table",
+   "records": "stand-in (study/agent/standin.py)",
+   "reasoning_effort": "low",
+   "model": "deepseek/deepseek-v4.1-flash-1017",
+   "newest_first": false,
+   "runs": 200,
+   "patients": 43,
+   "completed": 200,
+   "content_correct": 197,
+   "stanford_as_released": 0,
+   "stanford_orders_only": 0,
+   "stanford_orders_only_route_as_plain_string": 195,
+   "content_correct_and_stanford_as_released": 0,
+   "content_correct_and_stanford_orders_only": 0,
+   "content_correct_and_stanford_orders_only_plain_route": 195,
+   "stanford_orders_only_plain_route_but_content_wrong": 0,
+   "reasons": {
+    "correct": 197,
+    "wrong_product_unit_or_route": 2,
+    "no_orders": 1
+   },
+   "searches": {
+    "searched_K": 156,
+    "no_search": 44
+   },
+   "by_first_page": [
+    {
+     "chart": "fits_one_page",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 38
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": false,
+     "runs": 2
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": false,
+     "content_correct": true,
+     "runs": 110
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": false,
+     "runs": 1
+    },
+    {
+     "chart": "over_20_results",
+     "first_page_holds_latest_result": true,
+     "content_correct": true,
+     "runs": 49
+    }
+   ],
+   "by_required_dose_mEq": {
+    "10": {
+     "correct": 63,
+     "runs": 63
+    },
+    "20": {
+     "correct": 43,
+     "runs": 44
+    },
+    "30": {
+     "correct": 32,
+     "runs": 32
+    },
+    "40": {
+     "correct": 19,
+     "runs": 19
+    },
+    "50": {
+     "correct": 17,
+     "runs": 18
+    },
+    "60": {
+     "correct": 7,
+     "runs": 7
+    },
+    "70": {
+     "correct": 9,
+     "runs": 9
+    },
+    "80": {
+     "correct": 2,
+     "runs": 2
+    },
+    "90": {
+     "correct": 1,
+     "runs": 1
+    },
+    "100": {
+     "correct": 2,
+     "runs": 2
+    },
+    "130": {
+     "correct": 1,
+     "runs": 1
+    },
+    "140": {
+     "correct": 1,
+     "runs": 1
+    },
+    "350": {
+     "correct": 0,
+     "runs": 1
+    }
+   },
+   "by_results_in_chart": [
+    {
+     "results": "1 to 10",
+     "correct": 17,
+     "runs": 17
+    },
+    {
+     "results": "11 to 20",
+     "correct": 21,
+     "runs": 21
+    },
+    {
+     "results": "21 to 40",
+     "correct": 36,
+     "runs": 37
+    },
+    {
+     "results": "41 to 80",
+     "correct": 31,
+     "runs": 31
+    },
+    {
+     "results": "81 to 160",
+     "correct": 29,
+     "runs": 30
+    },
+    {
+     "results": "over 160",
+     "correct": 63,
+     "runs": 64
+    }
+   ],
+   "conflict_choice": null,
+   "added_error_row": false,
+   "searches_outside_the_stand_in": {},
+   "cost_usd": 0.2804
+  }
+ ]
+}

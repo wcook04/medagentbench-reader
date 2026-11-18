@@ -1,0 +1,105 @@
+{
+ "grader": "Stanford's task 9 grader, unmodified (sha256 67d19da263ac92c1b7075b3218ace3a4bd19b206a06fc7aebcc897dc39625419)",
+ "note": "pass means Stanford's released grader returned True for the transcript the baseline produced",
+ "released_30": {
+  "instances": 30,
+  "server": "local copy of the released server",
+  "charts_over_20_results": 20,
+  "first_page_holds_most_recent_result": 18,
+  "null_agent": {
+   "pass": 29,
+   "placed_orders": 0
+  },
+  "first_page_baseline": {
+   "pass": 30,
+   "placed_orders": 1
+  },
+  "full_chart_baseline": {
+   "pass": 30,
+   "placed_orders": 1
+  }
+ },
+ "derived": {
+  "server": "mock server (study/agent/standin.py), default order as released",
+  "instances": 7590,
+  "null_agent": {
+   "notLow": {
+    "instances": 6705,
+    "pass": 6705,
+    "placed_orders": 0
+   },
+   "replace": {
+    "instances": 629,
+    "pass": 0,
+    "placed_orders": 0
+   },
+   "conflict": {
+    "instances": 256,
+    "pass": 232,
+    "placed_orders": 0
+   }
+  },
+  "first_page_baseline": {
+   "notLow": {
+    "instances": 6705,
+    "pass": 6477,
+    "placed_orders": 228
+   },
+   "replace": {
+    "instances": 629,
+    "pass": 299,
+    "placed_orders": 381,
+    "placed_orders_with_another_dose": 82
+   },
+   "conflict": {
+    "instances": 256,
+    "pass": 242,
+    "placed_orders": 20,
+    "placed_no_order_as_the_specification_requires": 236
+   }
+  },
+  "full_chart_baseline": {
+   "notLow": {
+    "instances": 6705,
+    "pass": 6705,
+    "placed_orders": 0
+   },
+   "replace": {
+    "instances": 629,
+    "pass": 629,
+    "placed_orders": 629,
+    "dose_equals_the_specification": 629
+   },
+   "conflict": {
+    "instances": 256,
+    "pass": 256,
+    "placed_orders": 24
+   }
+  }
+ },
+ "first_page_baseline_on_action_required_instances": {
+  "instances": 629,
+  "pass": 299,
+  "decision_or_dose_differs_from_the_specification": 330,
+  "interval_95_resampling_patients": [
+   0.3238,
+   0.6699
+  ],
+  "mean_of_patient_pass_rates": 0.7431,
+  "patients": 59,
+  "by_chart": {
+   "20 results or fewer": {
+    "pass": 129,
+    "instances": 129
+   },
+   "over 20 results, most recent not on the first page": {
+    "pass": 19,
+    "instances": 349
+   },
+   "over 20 results, most recent on the first page": {
+    "pass": 151,
+    "instances": 151
+   }
+  }
+ }
+}

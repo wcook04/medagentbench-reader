@@ -1,0 +1,3590 @@
+{
+ "model": "deepseek/deepseek-v4.1-flash-1017",
+ "suites": {
+  "as_reported": {
+   "tests": 7590,
+   "required": {
+    "notLow": 6705,
+    "replace": 629,
+    "conflict": 256
+   }
+  },
+  "newer_result_not_final": {
+   "tests": 898,
+   "required": {
+    "notLow": 777,
+    "replace": 88,
+    "conflict": 33
+   }
+  },
+  "later_results_present": {
+   "tests": 1143,
+   "required": {
+    "notLow": 971,
+    "replace": 100,
+    "conflict": 72
+   }
+  },
+  "released_30": {
+   "tests": 30,
+   "required": {
+    "notLow": 28,
+    "replace": 1,
+    "conflict": 1
+   }
+  },
+  "constructed": {
+   "tests": 11,
+   "required": {
+    "noResult": 1,
+    "notLow": 3,
+    "replace": 7
+   }
+  },
+  "small_charts": {
+   "tests": 6175,
+   "required": {
+    "noResult": 1885,
+    "replace": 2496,
+    "notLow": 1248,
+    "conflict": 546
+   }
+  }
+ },
+ "programs": [
+  {
+   "file": "contract_01.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_02.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_03.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_04.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_05.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_06.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_07.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_08.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_09.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_10.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_11.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_12.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_13.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_14.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_15.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_16.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_17.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_18.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_19.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "contract_20.py",
+   "condition": "contract",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "instruction_01.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_02.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_03.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_04.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 796,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "said_cannot_apply_on_a_normal_result": 186,
+      "conflicting_results_not_reported": 50,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 297
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 4525,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 582,
+      "dose": 284,
+      "no_order_when_required": 356,
+      "ordered_when_not_low": 284,
+      "ordered_on_conflicting_results": 72,
+      "conflicting_results_not_reported": 36,
+      "said_cannot_apply_on_a_normal_result": 36
+     },
+     "disagree_where_instruction_is_unambiguous": 1542
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_05.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_06.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_07.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 232,
+      "ordered_on_conflicting_results": 24
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 30,
+      "ordered_on_conflicting_results": 3
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "conflicting_results_not_reported": 182,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_08.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_09.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_10.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 232,
+      "ordered_on_conflicting_results": 24
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 30,
+      "ordered_on_conflicting_results": 3
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "conflicting_results_not_reported": 182,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_11.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 232,
+      "ordered_on_conflicting_results": 24
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 30,
+      "ordered_on_conflicting_results": 3
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "conflicting_results_not_reported": 182,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_12.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7329,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22,
+      "said_cannot_apply_on_a_normal_result": 4,
+      "no_order_when_required": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 5
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 10,
+     "of": 11,
+     "disagreements": {
+      "no_order_when_required": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 1
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_13.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 232,
+      "ordered_on_conflicting_results": 24
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 30,
+      "ordered_on_conflicting_results": 3
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1071,
+     "of": 1143,
+     "disagreements": {
+      "ordered_on_conflicting_results": 6,
+      "conflicting_results_not_reported": 66
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 5629,
+     "of": 6175,
+     "disagreements": {
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_14.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 232,
+      "ordered_on_conflicting_results": 24
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 86,
+     "of": 898,
+     "disagreements": {
+      "said_cannot_apply_on_a_normal_result": 739,
+      "no_order_when_required": 73
+     },
+     "disagree_where_instruction_is_unambiguous": 812
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 2651,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 542,
+      "ordered_on_conflicting_results": 232,
+      "no_order_when_required": 1484,
+      "dose": 272,
+      "said_cannot_apply_on_a_normal_result": 606,
+      "conflicting_results_not_reported": 116,
+      "ordered_when_not_low": 272
+     },
+     "disagree_where_instruction_is_unambiguous": 3176
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_15.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 232,
+      "ordered_on_conflicting_results": 24
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 30,
+      "ordered_on_conflicting_results": 3
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "conflicting_results_not_reported": 182,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_16.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 232,
+      "ordered_on_conflicting_results": 24
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 30,
+      "ordered_on_conflicting_results": 3
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "conflicting_results_not_reported": 182,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_17.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_18.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_19.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "instruction_20.py",
+   "condition": "instruction",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7334,
+     "of": 7590,
+     "disagreements": {
+      "conflicting_results_not_reported": 234,
+      "ordered_on_conflicting_results": 22
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 865,
+     "of": 898,
+     "disagreements": {
+      "conflicting_results_not_reported": 31,
+      "ordered_on_conflicting_results": 2
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 960,
+     "of": 1143,
+     "disagreements": {
+      "no_order_when_required": 99,
+      "conflicting_results_not_reported": 72,
+      "ordered_when_not_low": 11,
+      "dose": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 111
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 29,
+     "of": 30,
+     "disagreements": {
+      "conflicting_results_not_reported": 1
+     },
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 3995,
+     "of": 6175,
+     "disagreements": {
+      "ordered_with_no_counted_result": 710,
+      "ordered_on_conflicting_results": 364,
+      "conflicting_results_not_reported": 182,
+      "dose": 308,
+      "no_order_when_required": 308,
+      "ordered_when_not_low": 308
+     },
+     "disagree_where_instruction_is_unambiguous": 1634
+    }
+   },
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": false
+  },
+  {
+   "file": "repaired_01.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_02.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_03.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_04.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 1,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_05.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_06.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_07.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_08.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 3,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_09.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 3,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_10.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_11.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_12.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_13.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 1,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_14.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 4,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_15.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 3,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_16.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_17.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_18.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_19.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  },
+  {
+   "file": "repaired_20.py",
+   "condition": "repaired",
+   "suites": {
+    "as_reported": {
+     "ran": true,
+     "agree": 7590,
+     "of": 7590,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "newer_result_not_final": {
+     "ran": true,
+     "agree": 898,
+     "of": 898,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "later_results_present": {
+     "ran": true,
+     "agree": 1143,
+     "of": 1143,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "released_30": {
+     "ran": true,
+     "agree": 30,
+     "of": 30,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "constructed": {
+     "ran": true,
+     "agree": 11,
+     "of": 11,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    },
+    "small_charts": {
+     "ran": true,
+     "agree": 6175,
+     "of": 6175,
+     "disagreements": {},
+     "disagree_where_instruction_is_unambiguous": 0
+    }
+   },
+   "feedback_rounds": 2,
+   "matches_stanford_reference_on_released_30": 30,
+   "agrees_everywhere": true
+  }
+ ],
+ "summary": {
+  "contract": {
+   "programs": 20,
+   "agree_everywhere": 20,
+   "match_stanford_reference_on_all_released_30": 20,
+   "right_at_every_unambiguous_report_moment": 20,
+   "unambiguous_report_moments_wrong_per_program": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "as_reported": 20,
+   "newer_result_not_final": 20,
+   "later_results_present": 20,
+   "released_30": 20,
+   "constructed": 20,
+   "small_charts": 20,
+   "programs_with_each_disagreement": {}
+  },
+  "instruction": {
+   "programs": 20,
+   "agree_everywhere": 0,
+   "match_stanford_reference_on_all_released_30": 20,
+   "right_at_every_unambiguous_report_moment": 19,
+   "unambiguous_report_moments_wrong_per_program": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5
+   ],
+   "as_reported": 1,
+   "newer_result_not_final": 1,
+   "later_results_present": 0,
+   "released_30": 1,
+   "constructed": 19,
+   "small_charts": 0,
+   "programs_with_each_disagreement": {
+    "ordered_on_conflicting_results": 20,
+    "no_order_when_required": 19,
+    "ordered_with_no_counted_result": 19,
+    "ordered_when_not_low": 19,
+    "conflicting_results_not_reported": 20,
+    "dose": 19,
+    "said_cannot_apply_on_a_normal_result": 3
+   }
+  },
+  "repaired": {
+   "programs": 20,
+   "agree_everywhere": 20,
+   "match_stanford_reference_on_all_released_30": 20,
+   "right_at_every_unambiguous_report_moment": 20,
+   "unambiguous_report_moments_wrong_per_program": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "as_reported": 20,
+   "newer_result_not_final": 20,
+   "later_results_present": 20,
+   "released_30": 20,
+   "constructed": 20,
+   "small_charts": 20,
+   "programs_with_each_disagreement": {},
+   "feedback_rounds": {
+    "2": 14,
+    "1": 2,
+    "3": 3,
+    "4": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "patients": 100,
+ "searches": [
+  {
+   "search": "Observation?code=K&patient=PATIENT",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?patient=PATIENT&code=K&_count=5000",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&_sort=-date&_count=1",
+   "same": 99,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&_sort=date&_count=50",
+   "same": 97,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&_sort=-date",
+   "same": 98,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&date=ge2023-11-01",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&date=gt2023-11-10T00:00:00%2B00:00&date=le2023-11-13",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&date=gt2023-11-11",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&date=lt2023-11-11",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&date=le2023-11-11T12:00:00Z&_sort=-date&_count=3",
+   "same": 99,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&date=2023-11-12",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&date=ge2023-10-01&_count=200",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=http://loinc.org|K&patient=PATIENT",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?category=laboratory&code=K&patient=PATIENT&_count=100",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=2823-3&patient=PATIENT",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=Patient/PATIENT",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&subject=PATIENT",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&_sort=-effectiveDateTime",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&status=final&_count=40",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&bogus=1",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Patient?identifier=PATIENT",
+   "same": 100,
+   "of": 100
+  },
+  {
+   "search": "Observation?code=K&patient=PATIENT&_sort=-date&_count=5#next",
+   "same": 98,
+   "of": 100
+  }
+ ],
+ "all_same": 2191,
+ "all": 2200,
+ "same_including_order_within_identical_times": 2157,
+ "differences_by_kind": {
+  "sorted search: different records on the page, with the same sample times: results that share one time are split across pages differently": 8,
+  "sorted search: same records; only one server states a total": 1
+ },
+ "released_server_same_as_itself_on_a_second_request": 2200,
+ "compared": "for each search: success or error, the ids of the returned results in order (order among results with the same sample time ignored for sorted searches), the stated total, and the relations of the links (self, next, previous)"
+}

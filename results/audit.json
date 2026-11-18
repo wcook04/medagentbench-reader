@@ -1,0 +1,7800 @@
+{
+ "population": {
+  "patients": 100,
+  "potassium_results": 7702,
+  "report_moments": 7590,
+  "results_by_status": {
+   "final": 7702
+  },
+  "results_by_unit": {
+   "mmol/L": 7696,
+   "(none)": 6
+  },
+  "results_with_no_unit": {
+   "n": 6,
+   "lowest_value": 0.0,
+   "highest_value": 4.8
+  },
+  "moments_by_required_outcome": {
+   "notLow": 6705,
+   "replace": 629,
+   "conflict": 256
+  },
+  "replace_moments": {
+   "moments": 629,
+   "patients": 59,
+   "distinct_low_results_behind_them": 601,
+   "distinct_patient_and_sample_time_pairs": 601,
+   "moments_per_patient": {
+    "min": 1,
+    "median": 5,
+    "max": 128
+   },
+   "moments_from_the_5_patients_with_most": 275
+  },
+  "conflict_moments_by_composition": {
+   "2 results, 2 different values": 231,
+   "3 results, 3 different values": 14,
+   "3 results, 2 different values": 11
+  }
+ },
+ "fixed_programs": {
+  "released_30_cases": {
+   "never_orders": {
+    "notLow": 28,
+    "conflict": 1,
+    "replace": 0
+   },
+   "reads_first_page_only": {
+    "notLow": 28,
+    "conflict": 1,
+    "replace": 1
+   },
+   "n": {
+    "notLow": 28,
+    "conflict": 1,
+    "replace": 1
+   },
+   "reads_first_page_only_where_orders_are_required_by_chart": {
+    "over 20 results, latest on the first page": {
+     "matched": 1,
+     "moments": 1
+    }
+   },
+   "cases_by_outcome_and_chart": {
+    "notLow | over 20 results, latest not on the first page": 11,
+    "conflict | over 20 results, latest not on the first page": 1,
+    "notLow | over 20 results, latest on the first page": 7,
+    "notLow | 20 results or fewer": 10,
+    "replace | over 20 results, latest on the first page": 1
+   }
+  },
+  "every_report_moment": {
+   "never_orders": {
+    "notLow": 6705,
+    "replace": 0,
+    "conflict": 256
+   },
+   "reads_first_page_only": {
+    "notLow": 6477,
+    "replace": 299,
+    "conflict": 236
+   },
+   "n": {
+    "notLow": 6705,
+    "replace": 629,
+    "conflict": 256
+   },
+   "reads_first_page_only_where_orders_are_required_by_chart": {
+    "20 results or fewer": {
+     "matched": 129,
+     "moments": 129
+    },
+    "over 20 results, latest not on the first page": {
+     "matched": 19,
+     "moments": 349
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 151,
+     "moments": 151
+    }
+   },
+   "cases_by_outcome_and_chart": {
+    "notLow | 20 results or fewer": 1221,
+    "replace | 20 results or fewer": 129,
+    "notLow | over 20 results, latest not on the first page": 4131,
+    "replace | over 20 results, latest not on the first page": 349,
+    "replace | over 20 results, latest on the first page": 151,
+    "notLow | over 20 results, latest on the first page": 1353,
+    "conflict | over 20 results, latest not on the first page": 133,
+    "conflict | over 20 results, latest on the first page": 100,
+    "conflict | 20 results or fewer": 23
+   },
+   "reads_first_page_only_interval_95_resampling_patients": [
+    0.3238,
+    0.6699
+   ]
+  },
+  "note": "matched means the program's decision equals the statement's outcome; for a moment whose latest results disagree, matched means it placed no order"
+ },
+ "batches": {
+  "conflict": {
+   "runs": 80,
+   "matched": 72,
+   "patients": 18,
+   "set": "conflict",
+   "scored_by": "the specification (content check)",
+   "content_ok": 72,
+   "released_pass": 0,
+   "relaxed_pass": 71,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 67,
+    "content ok, relaxed grader fail": 5,
+    "content not ok, relaxed grader fail": 4,
+    "content not ok, relaxed grader pass": 4
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 57,
+     "runs": 65
+    },
+    "searched_only_by_2823-3": {
+     "matched": 13,
+     "runs": 13
+    },
+    "searched_K_and_followed_the_next_page_link": {
+     "matched": 2,
+     "runs": 2
+    }
+   },
+   "searched_by_both_codes": 65,
+   "by_outcome": {
+    "matched (no order); no reply held the latest result": 48,
+    "matched; a reply held the latest result": 24,
+    "latest result returned; placed orders when none was required": 5,
+    "latest result never returned; dosed from the newest result it received": 2,
+    "ended without a final answer (provider_failure:no_content)": 1
+   },
+   "by_chart": {
+    "over 20 results, latest on the first page": {
+     "matched": 26,
+     "runs": 30
+    },
+    "over 20 results, latest not on the first page": {
+     "matched": 44,
+     "runs": 46
+    },
+    "20 results or fewer": {
+     "matched": 2,
+     "runs": 4
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 79,
+    "did not finish": 1
+   },
+   "by_patient": {
+    "patients": 18,
+    "matched_at_every_moment": 10,
+    "matched_at_no_moment": 1,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 0.8514
+   },
+   "share_matched": 0.9,
+   "interval_95_resampling_patients": [
+    0.8182,
+    0.9464
+   ]
+  },
+  "conflictHard_contract": {
+   "runs": 29,
+   "matched": 29,
+   "patients": 16,
+   "set": "conflict",
+   "scored_by": "the specification (content check)",
+   "content_ok": 29,
+   "released_pass": 0,
+   "relaxed_pass": 5,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader fail": 24,
+    "content ok, relaxed grader pass": 5
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 25,
+     "runs": 25
+    },
+    "made_no_search": {
+     "matched": 4,
+     "runs": 4
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched; a reply held the latest result": 16,
+    "matched (no order); no reply held the latest result": 13
+   },
+   "by_chart": {
+    "over 20 results, latest not on the first page": {
+     "matched": 12,
+     "runs": 12
+    },
+    "20 results or fewer": {
+     "matched": 7,
+     "runs": 7
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 10,
+     "runs": 10
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 29
+   },
+   "by_patient": {
+    "patients": 16,
+    "matched_at_every_moment": 16,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 1.0
+   },
+   "share_matched": 1.0,
+   "interval_95_resampling_patients": [
+    1.0,
+    1.0
+   ]
+  },
+  "conflictHard_table": {
+   "runs": 29,
+   "matched": 4,
+   "patients": 16,
+   "set": "conflict",
+   "scored_by": "the specification (content check)",
+   "content_ok": 4,
+   "released_pass": 0,
+   "relaxed_pass": 21,
+   "content_and_relaxed_grader": {
+    "content not ok, relaxed grader pass": 17,
+    "content not ok, relaxed grader fail": 8,
+    "content ok, relaxed grader pass": 4
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 4,
+     "runs": 25
+    },
+    "made_no_search": {
+     "matched": 0,
+     "runs": 3
+    },
+    "searched_K_and_asked_for_sorting": {
+     "matched": 0,
+     "runs": 1
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "latest result returned; placed orders when none was required": 14,
+    "latest result never returned; placed other orders": 8,
+    "never searched by the code K; received no potassium result; placed orders": 3,
+    "matched; a reply held the latest result": 3,
+    "matched (no order); no reply held the latest result": 1
+   },
+   "by_chart": {
+    "over 20 results, latest on the first page": {
+     "matched": 0,
+     "runs": 10
+    },
+    "over 20 results, latest not on the first page": {
+     "matched": 1,
+     "runs": 12
+    },
+    "20 results or fewer": {
+     "matched": 3,
+     "runs": 7
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 29
+   },
+   "by_patient": {
+    "patients": 16,
+    "matched_at_every_moment": 2,
+    "matched_at_no_moment": 13,
+    "median_patient_share": 0.0,
+    "mean_of_patient_shares": 0.1667
+   },
+   "share_matched": 0.1379,
+   "interval_95_resampling_patients": [
+    0.0,
+    0.3143
+   ]
+  },
+  "conflict_table": {
+   "runs": 80,
+   "matched": 64,
+   "patients": 18,
+   "set": "conflict",
+   "scored_by": "the specification (content check)",
+   "content_ok": 64,
+   "released_pass": 0,
+   "relaxed_pass": 69,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 63,
+    "content not ok, relaxed grader fail": 10,
+    "content not ok, relaxed grader pass": 6,
+    "content ok, relaxed grader fail": 1
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 63,
+     "runs": 78
+    },
+    "made_no_search": {
+     "matched": 1,
+     "runs": 1
+    },
+    "searched_K_with_a_date_filter": {
+     "matched": 0,
+     "runs": 1
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched (no order); no reply held the latest result": 35,
+    "matched; a reply held the latest result": 29,
+    "latest result never returned; placed other orders": 5,
+    "latest result returned; placed orders when none was required": 5,
+    "ended without a final answer (provider_failure:no_content)": 4,
+    "ended without a final answer (invalid_action)": 2
+   },
+   "by_chart": {
+    "over 20 results, latest not on the first page": {
+     "matched": 35,
+     "runs": 46
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 27,
+     "runs": 30
+    },
+    "20 results or fewer": {
+     "matched": 2,
+     "runs": 4
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 74,
+    "did not finish": 6
+   },
+   "by_patient": {
+    "patients": 18,
+    "matched_at_every_moment": 7,
+    "matched_at_no_moment": 4,
+    "median_patient_share": 0.8542,
+    "mean_of_patient_shares": 0.6586
+   },
+   "share_matched": 0.8,
+   "interval_95_resampling_patients": [
+    0.641,
+    0.8803
+   ]
+  },
+  "control_pilot": {
+   "runs": 30,
+   "matched": 30,
+   "patients": 30,
+   "set": "control",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 30,
+   "released_pass": 0,
+   "relaxed_pass": 30,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 30
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 29,
+     "runs": 29
+    },
+    "searched_only_by_2823-3": {
+     "matched": 1,
+     "runs": 1
+    }
+   },
+   "searched_by_both_codes": 19,
+   "by_outcome": {
+    "matched; a reply held the latest result": 18,
+    "matched (no order); no reply held the latest result": 12
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 30
+   }
+  },
+  "control_repeat": {
+   "runs": 30,
+   "matched": 30,
+   "patients": 30,
+   "set": "control",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 30,
+   "released_pass": 0,
+   "relaxed_pass": 30,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 30
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 29,
+     "runs": 29
+    },
+    "searched_K_and_followed_the_next_page_link": {
+     "matched": 1,
+     "runs": 1
+    }
+   },
+   "searched_by_both_codes": 19,
+   "by_outcome": {
+    "matched; a reply held the latest result": 18,
+    "matched (no order); no reply held the latest result": 12
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 30
+   }
+  },
+  "control_via_standin": {
+   "runs": 30,
+   "matched": 30,
+   "patients": 30,
+   "set": "control",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 30,
+   "released_pass": 0,
+   "relaxed_pass": 30,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 30
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 28,
+     "runs": 28
+    },
+    "searched_K_and_followed_the_next_page_link": {
+     "matched": 2,
+     "runs": 2
+    }
+   },
+   "searched_by_both_codes": 14,
+   "by_outcome": {
+    "matched; a reply held the latest result": 20,
+    "matched (no order); no reply held the latest result": 10
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 30
+   }
+  },
+  "errLow_contract": {
+   "runs": 40,
+   "matched": 40,
+   "patients": 22,
+   "set": "notLow",
+   "scored_by": "the specification (content check)",
+   "content_ok": 40,
+   "released_pass": 0,
+   "relaxed_pass": 2,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader fail": 38,
+    "content ok, relaxed grader pass": 2
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 33,
+     "runs": 33
+    },
+    "made_no_search": {
+     "matched": 6,
+     "runs": 6
+    },
+    "searched_K_with_a_date_filter": {
+     "matched": 1,
+     "runs": 1
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched": 40
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 40
+   },
+   "by_patient": {
+    "patients": 22,
+    "matched_at_every_moment": 22,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 1.0
+   },
+   "share_matched": 1.0,
+   "interval_95_resampling_patients": [
+    1.0,
+    1.0
+   ]
+  },
+  "errLow_table": {
+   "runs": 40,
+   "matched": 40,
+   "patients": 22,
+   "set": "notLow",
+   "scored_by": "the specification (content check)",
+   "content_ok": 40,
+   "released_pass": 0,
+   "relaxed_pass": 2,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader fail": 38,
+    "content ok, relaxed grader pass": 2
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 39,
+     "runs": 39
+    },
+    "made_no_search": {
+     "matched": 1,
+     "runs": 1
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched": 40
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 40
+   },
+   "by_patient": {
+    "patients": 22,
+    "matched_at_every_moment": 22,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 1.0
+   },
+   "share_matched": 1.0,
+   "interval_95_resampling_patients": [
+    1.0,
+    1.0
+   ]
+  },
+  "errNormal_contract": {
+   "runs": 40,
+   "matched": 39,
+   "patients": 22,
+   "set": "replace",
+   "scored_by": "the specification (content check)",
+   "content_ok": 39,
+   "released_pass": 0,
+   "relaxed_pass": 7,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader fail": 33,
+    "content ok, relaxed grader pass": 6,
+    "content not ok, relaxed grader pass": 1
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 27,
+     "runs": 27
+    },
+    "made_no_search": {
+     "matched": 12,
+     "runs": 13
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched": 39,
+    "no_orders": 1
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 40
+   },
+   "by_patient": {
+    "patients": 22,
+    "matched_at_every_moment": 21,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 0.9773
+   },
+   "share_matched": 0.975,
+   "interval_95_resampling_patients": [
+    0.9062,
+    1.0
+   ]
+  },
+  "errNormal_table": {
+   "runs": 40,
+   "matched": 40,
+   "patients": 22,
+   "set": "replace",
+   "scored_by": "the specification (content check)",
+   "content_ok": 40,
+   "released_pass": 0,
+   "relaxed_pass": 6,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader fail": 34,
+    "content ok, relaxed grader pass": 6
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 39,
+     "runs": 39
+    },
+    "made_no_search": {
+     "matched": 1,
+     "runs": 1
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched": 40
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 40
+   },
+   "by_patient": {
+    "patients": 22,
+    "matched_at_every_moment": 22,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 1.0
+   },
+   "share_matched": 1.0,
+   "interval_95_resampling_patients": [
+    1.0,
+    1.0
+   ]
+  },
+  "notLow": {
+   "runs": 120,
+   "matched": 118,
+   "patients": 38,
+   "set": "notLow",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 118,
+   "released_pass": 0,
+   "relaxed_pass": 118,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 118,
+    "content not ok, relaxed grader fail": 2
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 101,
+     "runs": 103
+    },
+    "searched_only_by_2823-3": {
+     "matched": 13,
+     "runs": 13
+    },
+    "searched_K_and_followed_the_next_page_link": {
+     "matched": 4,
+     "runs": 4
+    }
+   },
+   "searched_by_both_codes": 104,
+   "by_outcome": {
+    "matched (no order); no reply held the latest result": 79,
+    "matched; a reply held the latest result": 39,
+    "latest result never returned; dosed from the newest result it received": 2
+   },
+   "by_chart": {
+    "over 20 results, latest not on the first page": {
+     "matched": 74,
+     "runs": 76
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 29,
+     "runs": 29
+    },
+    "20 results or fewer": {
+     "matched": 15,
+     "runs": 15
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 120
+   },
+   "by_patient": {
+    "patients": 38,
+    "matched_at_every_moment": 36,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 0.9781
+   },
+   "share_matched": 0.9833,
+   "interval_95_resampling_patients": [
+    0.9535,
+    1.0
+   ]
+  },
+  "notLow_table": {
+   "runs": 120,
+   "matched": 117,
+   "patients": 38,
+   "set": "notLow",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 117,
+   "released_pass": 0,
+   "relaxed_pass": 117,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 117,
+    "content not ok, relaxed grader fail": 3
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 112,
+     "runs": 115
+    },
+    "made_no_search": {
+     "matched": 5,
+     "runs": 5
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched (no order); no reply held the latest result": 74,
+    "matched; a reply held the latest result": 43,
+    "ended without a final answer (provider_failure:no_content)": 2,
+    "ended without a final answer (invalid_action)": 1
+   },
+   "by_chart": {
+    "over 20 results, latest on the first page": {
+     "matched": 29,
+     "runs": 29
+    },
+    "20 results or fewer": {
+     "matched": 15,
+     "runs": 15
+    },
+    "over 20 results, latest not on the first page": {
+     "matched": 73,
+     "runs": 76
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 117,
+    "did not finish": 3
+   },
+   "by_patient": {
+    "patients": 38,
+    "matched_at_every_moment": 35,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 0.9907
+   },
+   "share_matched": 0.975,
+   "interval_95_resampling_patients": [
+    0.9541,
+    1.0
+   ],
+   "runs_that_also_searched_for_potassium": 115
+  },
+  "replace": {
+   "runs": 629,
+   "matched": 255,
+   "patients": 59,
+   "set": "replace",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 259,
+   "released_pass": 0,
+   "relaxed_pass": 255,
+   "content_and_relaxed_grader": {
+    "content not ok, relaxed grader fail": 370,
+    "content ok, relaxed grader pass": 255,
+    "content ok, relaxed grader fail": 4
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 254,
+     "runs": 542
+    },
+    "searched_only_by_2823-3": {
+     "matched": 0,
+     "runs": 84
+    },
+    "searched_K_and_followed_the_next_page_link": {
+     "matched": 1,
+     "runs": 3
+    }
+   },
+   "searched_by_both_codes": 496,
+   "by_outcome": {
+    "matched; a reply held the latest result": 237,
+    "latest result never returned; the newest result it received was not low; no order": 217,
+    "never searched by the code K; received no potassium result": 84,
+    "latest result never returned; dosed from the newest result it received": 67,
+    "matched; no reply held the latest result (an older result gave the same dose)": 18,
+    "required dose ordered; the test order's priority is not stat": 4,
+    "latest result returned; ordered a different dose": 1,
+    "latest result never returned; no order": 1
+   },
+   "by_chart": {
+    "over 20 results, latest not on the first page": {
+     "matched": 19,
+     "runs": 349
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 130,
+     "runs": 151
+    },
+    "20 results or fewer": {
+     "matched": 106,
+     "runs": 129
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 629
+   },
+   "by_patient": {
+    "patients": 59,
+    "matched_at_every_moment": 19,
+    "matched_at_no_moment": 6,
+    "median_patient_share": 0.6667,
+    "mean_of_patient_shares": 0.6058
+   },
+   "share_matched": 0.4054,
+   "interval_95_resampling_patients": [
+    0.2803,
+    0.5603
+   ]
+  },
+  "replace_high": {
+   "runs": 40,
+   "matched": 10,
+   "patients": 22,
+   "set": "replace",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 10,
+   "released_pass": 0,
+   "relaxed_pass": 10,
+   "content_and_relaxed_grader": {
+    "content not ok, relaxed grader fail": 30,
+    "content ok, relaxed grader pass": 10
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 7,
+     "runs": 20
+    },
+    "searched_only_by_2823-3": {
+     "matched": 0,
+     "runs": 16
+    },
+    "searched_K_and_followed_the_next_page_link": {
+     "matched": 3,
+     "runs": 4
+    }
+   },
+   "searched_by_both_codes": 24,
+   "by_outcome": {
+    "never searched by the code K; received no potassium result": 16,
+    "matched; a reply held the latest result": 10,
+    "latest result never returned; the newest result it received was not low; no order": 8,
+    "latest result never returned; dosed from the newest result it received": 6
+   },
+   "by_chart": {
+    "over 20 results, latest on the first page": {
+     "matched": 5,
+     "runs": 9
+    },
+    "over 20 results, latest not on the first page": {
+     "matched": 3,
+     "runs": 26
+    },
+    "20 results or fewer": {
+     "matched": 2,
+     "runs": 5
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 40
+   },
+   "by_patient": {
+    "patients": 22,
+    "matched_at_every_moment": 8,
+    "matched_at_no_moment": 12,
+    "median_patient_share": 0.0,
+    "mean_of_patient_shares": 0.4091
+   },
+   "share_matched": 0.25,
+   "interval_95_resampling_patients": [
+    0.1136,
+    0.4839
+   ]
+  },
+  "replace_hint": {
+   "runs": 200,
+   "matched": 138,
+   "patients": 43,
+   "set": "replace",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 142,
+   "released_pass": 0,
+   "relaxed_pass": 138,
+   "content_and_relaxed_grader": {
+    "content not ok, relaxed grader fail": 58,
+    "content ok, relaxed grader pass": 138,
+    "content ok, relaxed grader fail": 4
+   },
+   "by_search": {
+    "searched_K_and_asked_for_sorting": {
+     "matched": 138,
+     "runs": 143
+    },
+    "searched_only_by_2823-3": {
+     "matched": 0,
+     "runs": 57
+    }
+   },
+   "searched_by_both_codes": 51,
+   "by_outcome": {
+    "matched; a reply held the latest result": 138,
+    "never searched by the code K; received no potassium result": 57,
+    "required dose ordered; the test order's priority is not stat": 4,
+    "latest result returned; wrong product, unit or route": 1
+   },
+   "by_chart": {
+    "over 20 results, latest not on the first page": {
+     "matched": 81,
+     "runs": 112
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 30,
+     "runs": 50
+    },
+    "20 results or fewer": {
+     "matched": 27,
+     "runs": 38
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 200
+   },
+   "by_patient": {
+    "patients": 43,
+    "matched_at_every_moment": 16,
+    "matched_at_no_moment": 5,
+    "median_patient_share": 0.7143,
+    "mean_of_patient_shares": 0.6864
+   },
+   "share_matched": 0.69,
+   "interval_95_resampling_patients": [
+    0.6183,
+    0.7431
+   ]
+  },
+  "replace_newest": {
+   "runs": 629,
+   "matched": 521,
+   "patients": 59,
+   "set": "replace",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 531,
+   "released_pass": 0,
+   "relaxed_pass": 521,
+   "content_and_relaxed_grader": {
+    "content not ok, relaxed grader fail": 98,
+    "content ok, relaxed grader pass": 521,
+    "content ok, relaxed grader fail": 10
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 521,
+     "runs": 531
+    },
+    "searched_only_by_2823-3": {
+     "matched": 0,
+     "runs": 98
+    }
+   },
+   "searched_by_both_codes": 492,
+   "by_outcome": {
+    "matched; a reply held the latest result": 521,
+    "never searched by the code K; received no potassium result": 98,
+    "required dose ordered; the test order's priority is not stat": 10
+   },
+   "by_chart": {
+    "over 20 results, latest not on the first page": {
+     "matched": 279,
+     "runs": 349
+    },
+    "20 results or fewer": {
+     "matched": 112,
+     "runs": 129
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 130,
+     "runs": 151
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 629
+   },
+   "by_patient": {
+    "patients": 59,
+    "matched_at_every_moment": 25,
+    "matched_at_no_moment": 4,
+    "median_patient_share": 0.9091,
+    "mean_of_patient_shares": 0.8272
+   },
+   "share_matched": 0.8283,
+   "interval_95_resampling_patients": [
+    0.8,
+    0.8671
+   ]
+  },
+  "replace_repeat": {
+   "runs": 100,
+   "matched": 35,
+   "patients": 35,
+   "set": "replace",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 36,
+   "released_pass": 0,
+   "relaxed_pass": 35,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 35,
+    "content not ok, relaxed grader fail": 64,
+    "content ok, relaxed grader fail": 1
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 35,
+     "runs": 86
+    },
+    "searched_only_by_2823-3": {
+     "matched": 0,
+     "runs": 14
+    }
+   },
+   "searched_by_both_codes": 77,
+   "by_outcome": {
+    "matched; a reply held the latest result": 33,
+    "latest result never returned; the newest result it received was not low; no order": 33,
+    "latest result never returned; dosed from the newest result it received": 17,
+    "never searched by the code K; received no potassium result": 14,
+    "matched; no reply held the latest result (an older result gave the same dose)": 2,
+    "required dose ordered; the test order's priority is not stat": 1
+   },
+   "by_chart": {
+    "20 results or fewer": {
+     "matched": 12,
+     "runs": 17
+    },
+    "over 20 results, latest not on the first page": {
+     "matched": 2,
+     "runs": 59
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 21,
+     "runs": 24
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 100
+   },
+   "by_patient": {
+    "patients": 35,
+    "matched_at_every_moment": 11,
+    "matched_at_no_moment": 9,
+    "median_patient_share": 0.5,
+    "mean_of_patient_shares": 0.4941
+   },
+   "share_matched": 0.35,
+   "interval_95_resampling_patients": [
+    0.2407,
+    0.5
+   ]
+  },
+  "replace_table": {
+   "runs": 200,
+   "matched": 195,
+   "patients": 43,
+   "set": "replace",
+   "scored_by": "Stanford's grader with the route type and the final answer not examined",
+   "content_ok": 197,
+   "released_pass": 0,
+   "relaxed_pass": 195,
+   "content_and_relaxed_grader": {
+    "content ok, relaxed grader pass": 195,
+    "content ok, relaxed grader fail": 2,
+    "content not ok, relaxed grader fail": 3
+   },
+   "by_search": {
+    "searched_K_and_read_the_first_page_only": {
+     "matched": 151,
+     "runs": 156
+    },
+    "made_no_search": {
+     "matched": 44,
+     "runs": 44
+    }
+   },
+   "searched_by_both_codes": 0,
+   "by_outcome": {
+    "matched; no reply held the latest result (the latest result received gives another dose)": 120,
+    "matched; a reply held the latest result": 73,
+    "required dose ordered; the test order's priority is not stat": 2,
+    "matched; no reply held the latest result (an older result gave the same dose)": 2,
+    "latest result returned; wrong product, unit or route": 1,
+    "latest result never returned; no order": 1,
+    "latest result never returned; placed other orders": 1
+   },
+   "by_chart": {
+    "20 results or fewer": {
+     "matched": 38,
+     "runs": 38
+    },
+    "over 20 results, latest on the first page": {
+     "matched": 49,
+     "runs": 50
+    },
+    "over 20 results, latest not on the first page": {
+     "matched": 108,
+     "runs": 112
+    }
+   },
+   "closing_message": {
+    "a list holding one or more sentences": 200
+   },
+   "by_patient": {
+    "patients": 43,
+    "matched_at_every_moment": 39,
+    "matched_at_no_moment": 0,
+    "median_patient_share": 1.0,
+    "mean_of_patient_shares": 0.9876
+   },
+   "share_matched": 0.975,
+   "interval_95_resampling_patients": [
+    0.9469,
+    0.9956
+   ],
+   "runs_that_also_searched_for_potassium": 156
+  }
+ },
+ "paired": {
+  "released_search_vs_newest_first": {
+   "first": "replace",
+   "second": "replace_newest",
+   "moments_in_both": 629,
+   "patients": 59,
+   "first_searched_only_by_2823-3": 84,
+   "second_searched_only_by_2823-3": 98,
+   "both_searched_only_by_2823-3": 14,
+   "first_matched": 255,
+   "second_matched": 521,
+   "both_matched": 218,
+   "only_first_matched": 37,
+   "only_second_matched": 303,
+   "neither_matched": 71,
+   "difference_in_share": 0.4229,
+   "interval_95_resampling_patients": [
+    0.2861,
+    0.5315
+   ],
+   "first_mean_of_patient_shares": 0.6058,
+   "second_mean_of_patient_shares": 0.8272,
+   "mean_of_patient_differences": 0.2214
+  },
+  "released_search_vs_paging_sentence": {
+   "first": "replace",
+   "second": "replace_hint",
+   "moments_in_both": 200,
+   "patients": 43,
+   "first_searched_only_by_2823-3": 25,
+   "second_searched_only_by_2823-3": 57,
+   "both_searched_only_by_2823-3": 7,
+   "first_matched": 79,
+   "second_matched": 138,
+   "both_matched": 55,
+   "only_first_matched": 24,
+   "only_second_matched": 83,
+   "neither_matched": 38,
+   "difference_in_share": 0.295,
+   "interval_95_resampling_patients": [
+    0.0952,
+    0.4532
+   ],
+   "first_mean_of_patient_shares": 0.5423,
+   "second_mean_of_patient_shares": 0.6864,
+   "mean_of_patient_differences": 0.144
+  },
+  "released_search_vs_table": {
+   "first": "replace",
+   "second": "replace_table",
+   "moments_in_both": 200,
+   "patients": 43,
+   "first_searched_only_by_2823-3": 25,
+   "second_searched_only_by_2823-3": 0,
+   "both_searched_only_by_2823-3": 0,
+   "first_matched": 79,
+   "second_matched": 195,
+   "both_matched": 78,
+   "only_first_matched": 1,
+   "only_second_matched": 117,
+   "neither_matched": 4,
+   "difference_in_share": 0.58,
+   "interval_95_resampling_patients": [
+    0.4113,
+    0.7169
+   ],
+   "first_mean_of_patient_shares": 0.5423,
+   "second_mean_of_patient_shares": 0.9876,
+   "mean_of_patient_differences": 0.4452
+  },
+  "low_vs_high_reasoning_effort": {
+   "first": "replace",
+   "second": "replace_high",
+   "moments_in_both": 40,
+   "patients": 22,
+   "first_searched_only_by_2823-3": 7,
+   "second_searched_only_by_2823-3": 16,
+   "both_searched_only_by_2823-3": 3,
+   "first_matched": 12,
+   "second_matched": 10,
+   "both_matched": 5,
+   "only_first_matched": 7,
+   "only_second_matched": 5,
+   "neither_matched": 23,
+   "difference_in_share": -0.05,
+   "interval_95_resampling_patients": [
+    -0.2,
+    0.1667
+   ],
+   "first_mean_of_patient_shares": 0.3492,
+   "second_mean_of_patient_shares": 0.4091,
+   "mean_of_patient_differences": 0.0599
+  },
+  "newest_first_vs_table": {
+   "first": "replace_newest",
+   "second": "replace_table",
+   "moments_in_both": 200,
+   "patients": 43,
+   "first_searched_only_by_2823-3": 27,
+   "second_searched_only_by_2823-3": 0,
+   "both_searched_only_by_2823-3": 0,
+   "first_matched": 171,
+   "second_matched": 195,
+   "both_matched": 167,
+   "only_first_matched": 4,
+   "only_second_matched": 28,
+   "neither_matched": 1,
+   "difference_in_share": 0.12,
+   "interval_95_resampling_patients": [
+    0.0405,
+    0.1856
+   ],
+   "first_mean_of_patient_shares": 0.8483,
+   "second_mean_of_patient_shares": 0.9876,
+   "mean_of_patient_differences": 0.1392
+  },
+  "not_low_released_search_vs_table": {
+   "first": "notLow",
+   "second": "notLow_table",
+   "moments_in_both": 120,
+   "patients": 38,
+   "first_searched_only_by_2823-3": 13,
+   "second_searched_only_by_2823-3": 0,
+   "both_searched_only_by_2823-3": 0,
+   "first_matched": 118,
+   "second_matched": 117,
+   "both_matched": 115,
+   "only_first_matched": 3,
+   "only_second_matched": 2,
+   "neither_matched": 0,
+   "difference_in_share": -0.0083,
+   "interval_95_resampling_patients": [
+    -0.038,
+    0.0333
+   ],
+   "first_mean_of_patient_shares": 0.9781,
+   "second_mean_of_patient_shares": 0.9907,
+   "mean_of_patient_differences": 0.0126
+  },
+  "released_search_run_twice": {
+   "first": "replace",
+   "second": "replace_repeat",
+   "moments_in_both": 100,
+   "patients": 35,
+   "first_searched_only_by_2823-3": 15,
+   "second_searched_only_by_2823-3": 14,
+   "both_searched_only_by_2823-3": 2,
+   "first_matched": 37,
+   "second_matched": 35,
+   "both_matched": 28,
+   "only_first_matched": 9,
+   "only_second_matched": 7,
+   "neither_matched": 56,
+   "difference_in_share": -0.02,
+   "interval_95_resampling_patients": [
+    -0.1111,
+    0.0581
+   ],
+   "first_mean_of_patient_shares": 0.5322,
+   "second_mean_of_patient_shares": 0.4941,
+   "mean_of_patient_differences": -0.0381
+  },
+  "released_cases_twice_on_the_released_server": {
+   "first": "control_pilot",
+   "second": "control_repeat",
+   "moments_in_both": 30,
+   "patients": 30,
+   "first_searched_only_by_2823-3": 1,
+   "second_searched_only_by_2823-3": 0,
+   "both_searched_only_by_2823-3": 0,
+   "first_matched": 30,
+   "second_matched": 30,
+   "both_matched": 30,
+   "only_first_matched": 0,
+   "only_second_matched": 0,
+   "neither_matched": 0,
+   "difference_in_share": 0.0,
+   "interval_95_resampling_patients": [
+    0.0,
+    0.0
+   ],
+   "first_mean_of_patient_shares": 1.0,
+   "second_mean_of_patient_shares": 1.0,
+   "mean_of_patient_differences": 0.0
+  },
+  "released_cases_released_server_vs_stand_in": {
+   "first": "control_pilot",
+   "second": "control_via_standin",
+   "moments_in_both": 30,
+   "patients": 30,
+   "first_searched_only_by_2823-3": 1,
+   "second_searched_only_by_2823-3": 0,
+   "both_searched_only_by_2823-3": 0,
+   "first_matched": 30,
+   "second_matched": 30,
+   "both_matched": 30,
+   "only_first_matched": 0,
+   "only_second_matched": 0,
+   "neither_matched": 0,
+   "difference_in_share": 0.0,
+   "interval_95_resampling_patients": [
+    0.0,
+    0.0
+   ],
+   "first_mean_of_patient_shares": 1.0,
+   "second_mean_of_patient_shares": 1.0,
+   "mean_of_patient_differences": 0.0
+  }
+ },
+ "moments_that_require_the_orders": {
+  "note": "one entry per report moment: p is the patient's rank by number of moments, of is that patient's number of moments, rows the potassium results in the chart, g the chart group, dose the required dose in mEq, r and n what the run did under the released and the newest-first search",
+  "groups": [
+   "20 results or fewer",
+   "over 20 results, latest on the first page",
+   "over 20 results, latest not on the first page"
+  ],
+  "codes": [
+   "orders match; a reply held the latest result",
+   "orders match; no reply held the latest result",
+   "no order; the latest result was never returned",
+   "dose from an older result",
+   "no order; searched only by 2823-3",
+   "the latest result was returned and the dose differs",
+   "required dose ordered; a field the tool definitions specify is missing"
+  ],
+  "cells": [
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 6,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00292"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 9,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02680"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 10,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m01161"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 13,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04200"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 16,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02030"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 19,
+    "g": 0,
+    "dose": 70,
+    "r": 0,
+    "n": 4,
+    "label": "m03281"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 20,
+    "g": 0,
+    "dose": 30,
+    "r": 4,
+    "n": 0,
+    "label": "m06669"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 2,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m04863"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 1,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m05449"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 20,
+    "g": 0,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m06946"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 10,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00488"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 12,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m07351"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 13,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06275"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 15,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m04884"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 16,
+    "g": 0,
+    "dose": 90,
+    "r": 0,
+    "n": 0,
+    "label": "m01602"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 2,
+    "g": 0,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m04416"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 4,
+    "g": 0,
+    "dose": 30,
+    "r": 4,
+    "n": 0,
+    "label": "m07367"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 7,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m01652"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 8,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01572"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 9,
+    "g": 0,
+    "dose": 10,
+    "r": 6,
+    "n": 0,
+    "label": "m03910"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 10,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m05909"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 12,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m06547"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 13,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m03740"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 14,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m01092"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 15,
+    "g": 0,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m05469"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 16,
+    "g": 0,
+    "dose": 50,
+    "r": 6,
+    "n": 0,
+    "label": "m03103"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 17,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m01789"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 18,
+    "g": 0,
+    "dose": 70,
+    "r": 0,
+    "n": 0,
+    "label": "m00626"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 19,
+    "g": 0,
+    "dose": 90,
+    "r": 4,
+    "n": 0,
+    "label": "m02628"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 8,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01982"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 10,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02549"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 11,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m05067"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 12,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m05922"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 17,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02905"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 18,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m05151"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 19,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 4,
+    "label": "m02825"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 20,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m00959"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 2,
+    "g": 0,
+    "dose": 70,
+    "r": 0,
+    "n": 0,
+    "label": "m05624"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 4,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m07552"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 5,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m05384"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 1,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m06115"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 2,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m01968"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 16,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m05038"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 19,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02129"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 20,
+    "g": 0,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m07370"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 7,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00708"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 11,
+    "g": 0,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m02034"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 12,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06318"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 14,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 4,
+    "label": "m06901"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 18,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06080"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 19,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m01950"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 9,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 4,
+    "label": "m07132"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 20,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04098"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 3,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m07417"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 7,
+    "g": 0,
+    "dose": 100,
+    "r": 0,
+    "n": 4,
+    "label": "m05295"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 8,
+    "g": 0,
+    "dose": 100,
+    "r": 0,
+    "n": 0,
+    "label": "m04599"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 9,
+    "g": 0,
+    "dose": 100,
+    "r": 4,
+    "n": 0,
+    "label": "m00618"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 10,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m01361"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 11,
+    "g": 0,
+    "dose": 60,
+    "r": 4,
+    "n": 0,
+    "label": "m04388"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 12,
+    "g": 0,
+    "dose": 70,
+    "r": 0,
+    "n": 0,
+    "label": "m00056"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 11,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02382"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 4,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m03981"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 5,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m05209"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 6,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m01113"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 9,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m02974"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 13,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 4,
+    "label": "m03259"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 15,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m05641"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 3,
+    "g": 0,
+    "dose": 10,
+    "r": 4,
+    "n": 4,
+    "label": "m03100"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 5,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 4,
+    "label": "m04823"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 13,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m03537"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 16,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m03280"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 17,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m02480"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 18,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m01983"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 19,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m05461"
+   },
+   {
+    "p": 22,
+    "of": 7,
+    "rows": 1,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m05281"
+   },
+   {
+    "p": 22,
+    "of": 7,
+    "rows": 2,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m03561"
+   },
+   {
+    "p": 23,
+    "of": 7,
+    "rows": 20,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04409"
+   },
+   {
+    "p": 24,
+    "of": 7,
+    "rows": 20,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m07095"
+   },
+   {
+    "p": 25,
+    "of": 7,
+    "rows": 15,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m00127"
+   },
+   {
+    "p": 25,
+    "of": 7,
+    "rows": 16,
+    "g": 0,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m02283"
+   },
+   {
+    "p": 25,
+    "of": 7,
+    "rows": 18,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m01943"
+   },
+   {
+    "p": 25,
+    "of": 7,
+    "rows": 19,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m05413"
+   },
+   {
+    "p": 26,
+    "of": 6,
+    "rows": 7,
+    "g": 0,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m05766"
+   },
+   {
+    "p": 26,
+    "of": 6,
+    "rows": 11,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06808"
+   },
+   {
+    "p": 27,
+    "of": 6,
+    "rows": 9,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04152"
+   },
+   {
+    "p": 27,
+    "of": 6,
+    "rows": 12,
+    "g": 0,
+    "dose": 30,
+    "r": 4,
+    "n": 4,
+    "label": "m06800"
+   },
+   {
+    "p": 27,
+    "of": 6,
+    "rows": 13,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m03385"
+   },
+   {
+    "p": 27,
+    "of": 6,
+    "rows": 14,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m04864"
+   },
+   {
+    "p": 27,
+    "of": 6,
+    "rows": 15,
+    "g": 0,
+    "dose": 30,
+    "r": 4,
+    "n": 0,
+    "label": "m06401"
+   },
+   {
+    "p": 29,
+    "of": 5,
+    "rows": 17,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m04046"
+   },
+   {
+    "p": 29,
+    "of": 5,
+    "rows": 18,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02269"
+   },
+   {
+    "p": 30,
+    "of": 5,
+    "rows": 10,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m04910"
+   },
+   {
+    "p": 32,
+    "of": 4,
+    "rows": 5,
+    "g": 0,
+    "dose": 90,
+    "r": 0,
+    "n": 0,
+    "label": "m03226"
+   },
+   {
+    "p": 32,
+    "of": 4,
+    "rows": 7,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m07563"
+   },
+   {
+    "p": 32,
+    "of": 4,
+    "rows": 10,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06083"
+   },
+   {
+    "p": 32,
+    "of": 4,
+    "rows": 15,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 4,
+    "label": "m01784"
+   },
+   {
+    "p": 33,
+    "of": 3,
+    "rows": 17,
+    "g": 0,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m01041"
+   },
+   {
+    "p": 33,
+    "of": 3,
+    "rows": 18,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02329"
+   },
+   {
+    "p": 33,
+    "of": 3,
+    "rows": 19,
+    "g": 0,
+    "dose": 30,
+    "r": 4,
+    "n": 0,
+    "label": "m00002"
+   },
+   {
+    "p": 34,
+    "of": 3,
+    "rows": 1,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 6,
+    "label": "m04375"
+   },
+   {
+    "p": 34,
+    "of": 3,
+    "rows": 2,
+    "g": 0,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m05979"
+   },
+   {
+    "p": 34,
+    "of": 3,
+    "rows": 3,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00451"
+   },
+   {
+    "p": 35,
+    "of": 3,
+    "rows": 5,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m02613"
+   },
+   {
+    "p": 35,
+    "of": 3,
+    "rows": 7,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m02290"
+   },
+   {
+    "p": 35,
+    "of": 3,
+    "rows": 10,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m03878"
+   },
+   {
+    "p": 36,
+    "of": 3,
+    "rows": 7,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 4,
+    "label": "m05323"
+   },
+   {
+    "p": 37,
+    "of": 3,
+    "rows": 1,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02475"
+   },
+   {
+    "p": 37,
+    "of": 3,
+    "rows": 2,
+    "g": 0,
+    "dose": 70,
+    "r": 0,
+    "n": 0,
+    "label": "m07214"
+   },
+   {
+    "p": 37,
+    "of": 3,
+    "rows": 3,
+    "g": 0,
+    "dose": 70,
+    "r": 0,
+    "n": 4,
+    "label": "m00711"
+   },
+   {
+    "p": 38,
+    "of": 3,
+    "rows": 11,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06784"
+   },
+   {
+    "p": 39,
+    "of": 3,
+    "rows": 2,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m03199"
+   },
+   {
+    "p": 42,
+    "of": 2,
+    "rows": 3,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m04615"
+   },
+   {
+    "p": 42,
+    "of": 2,
+    "rows": 8,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00802"
+   },
+   {
+    "p": 44,
+    "of": 1,
+    "rows": 2,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06922"
+   },
+   {
+    "p": 45,
+    "of": 1,
+    "rows": 6,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m05775"
+   },
+   {
+    "p": 46,
+    "of": 1,
+    "rows": 1,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m03939"
+   },
+   {
+    "p": 47,
+    "of": 1,
+    "rows": 5,
+    "g": 0,
+    "dose": 30,
+    "r": 4,
+    "n": 4,
+    "label": "m06923"
+   },
+   {
+    "p": 48,
+    "of": 1,
+    "rows": 17,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00163"
+   },
+   {
+    "p": 49,
+    "of": 1,
+    "rows": 7,
+    "g": 0,
+    "dose": 30,
+    "r": 6,
+    "n": 0,
+    "label": "m02088"
+   },
+   {
+    "p": 50,
+    "of": 1,
+    "rows": 10,
+    "g": 0,
+    "dose": 40,
+    "r": 0,
+    "n": 4,
+    "label": "m04816"
+   },
+   {
+    "p": 51,
+    "of": 1,
+    "rows": 6,
+    "g": 0,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m04276"
+   },
+   {
+    "p": 52,
+    "of": 1,
+    "rows": 2,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06665"
+   },
+   {
+    "p": 53,
+    "of": 1,
+    "rows": 1,
+    "g": 0,
+    "dose": 50,
+    "r": 0,
+    "n": 4,
+    "label": "m03182"
+   },
+   {
+    "p": 54,
+    "of": 1,
+    "rows": 10,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02618"
+   },
+   {
+    "p": 55,
+    "of": 1,
+    "rows": 1,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06741"
+   },
+   {
+    "p": 56,
+    "of": 1,
+    "rows": 1,
+    "g": 0,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m03256"
+   },
+   {
+    "p": 57,
+    "of": 1,
+    "rows": 15,
+    "g": 0,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m00673"
+   },
+   {
+    "p": 58,
+    "of": 1,
+    "rows": 2,
+    "g": 0,
+    "dose": 10,
+    "r": 4,
+    "n": 6,
+    "label": "m01878"
+   },
+   {
+    "p": 59,
+    "of": 1,
+    "rows": 11,
+    "g": 0,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m01875"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 26,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m03026"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 258,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m00112"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 734,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00008"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 50,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m03689"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 52,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06733"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 85,
+    "g": 1,
+    "dose": 20,
+    "r": 6,
+    "n": 0,
+    "label": "m07270"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 102,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01515"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 110,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m03480"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 119,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m05581"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 120,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 4,
+    "label": "m03390"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 129,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m03346"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 131,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m01035"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 140,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02254"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 141,
+    "g": 1,
+    "dose": 110,
+    "r": 0,
+    "n": 0,
+    "label": "m07306"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 24,
+    "g": 1,
+    "dose": 50,
+    "r": 4,
+    "n": 0,
+    "label": "m00379"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 25,
+    "g": 1,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m05905"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 26,
+    "g": 1,
+    "dose": 80,
+    "r": 0,
+    "n": 4,
+    "label": "m02590"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 27,
+    "g": 1,
+    "dose": 90,
+    "r": 0,
+    "n": 0,
+    "label": "m03894"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 28,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m04457"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 29,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 6,
+    "label": "m06563"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 30,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02881"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 31,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m03361"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 33,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06240"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 35,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01935"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 39,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m05923"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 53,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m01435"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 57,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01513"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 70,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m01078"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 73,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02663"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 86,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02884"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 88,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m07147"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 22,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m05788"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 51,
+    "g": 1,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m01396"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 152,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00401"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 347,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m07282"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 355,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02049"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 43,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m06431"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 45,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 4,
+    "label": "m04195"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 47,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m03208"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 121,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m01069"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 169,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m05361"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 193,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m02650"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 196,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m01301"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 230,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m05465"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 22,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m03846"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 24,
+    "g": 1,
+    "dose": 10,
+    "r": 5,
+    "n": 0,
+    "label": "m00969"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 25,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m01977"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 28,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06607"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 29,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m03891"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 30,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02670"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 31,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06309"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 32,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m05851"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 33,
+    "g": 1,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m03955"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 34,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m03169"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 35,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m05089"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 93,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01302"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 122,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m01197"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 35,
+    "g": 1,
+    "dose": 50,
+    "r": 4,
+    "n": 0,
+    "label": "m06832"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 36,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m07302"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 41,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m05505"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 45,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m02241"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 88,
+    "g": 1,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m06355"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 283,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00210"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 284,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00681"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 21,
+    "g": 1,
+    "dose": 70,
+    "r": 0,
+    "n": 0,
+    "label": "m01800"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 22,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m05657"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 23,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m03230"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 24,
+    "g": 1,
+    "dose": 80,
+    "r": 0,
+    "n": 4,
+    "label": "m06004"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 25,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m03130"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 26,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02533"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 27,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04134"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 29,
+    "g": 1,
+    "dose": 80,
+    "r": 0,
+    "n": 4,
+    "label": "m07210"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 30,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m05638"
+   },
+   {
+    "p": 8,
+    "of": 24,
+    "rows": 41,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m07410"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 21,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 4,
+    "label": "m05065"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 22,
+    "g": 1,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m00984"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 23,
+    "g": 1,
+    "dose": 20,
+    "r": 4,
+    "n": 6,
+    "label": "m06440"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 24,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m04625"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 26,
+    "g": 1,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m03498"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 29,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 4,
+    "label": "m02534"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 115,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00809"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 116,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 4,
+    "label": "m04671"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 27,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02134"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 31,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m02152"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 33,
+    "g": 1,
+    "dose": 30,
+    "r": 4,
+    "n": 0,
+    "label": "m05340"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 43,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m04288"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 47,
+    "g": 1,
+    "dose": 70,
+    "r": 4,
+    "n": 0,
+    "label": "m07428"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 51,
+    "g": 1,
+    "dose": 60,
+    "r": 0,
+    "n": 4,
+    "label": "m05074"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 23,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m07323"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 24,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 4,
+    "label": "m04756"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 25,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m02742"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 26,
+    "g": 1,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m05277"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 27,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m05240"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 31,
+    "g": 1,
+    "dose": 70,
+    "r": 0,
+    "n": 0,
+    "label": "m02026"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 42,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00729"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 48,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01802"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 53,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 4,
+    "label": "m04708"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 22,
+    "g": 1,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m06908"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 33,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m05745"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 22,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00943"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 24,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m05028"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 25,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 4,
+    "label": "m01673"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 26,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06853"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 30,
+    "g": 1,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m01683"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 50,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01969"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 56,
+    "g": 1,
+    "dose": 70,
+    "r": 0,
+    "n": 6,
+    "label": "m02791"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 58,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06834"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 55,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01787"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 63,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m07093"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 21,
+    "g": 1,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m06757"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 22,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m01220"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 23,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02311"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 25,
+    "g": 1,
+    "dose": 20,
+    "r": 4,
+    "n": 6,
+    "label": "m05315"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 26,
+    "g": 1,
+    "dose": 60,
+    "r": 0,
+    "n": 0,
+    "label": "m00152"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 27,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04007"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 28,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m06574"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 46,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m06374"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 49,
+    "g": 1,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m06487"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 76,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m02431"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 80,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m03135"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 83,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m07273"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 88,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00535"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 22,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00583"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 24,
+    "g": 1,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m02135"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 23,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m00757"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 24,
+    "g": 1,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m06215"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 26,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 4,
+    "label": "m02904"
+   },
+   {
+    "p": 22,
+    "of": 7,
+    "rows": 34,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m03975"
+   },
+   {
+    "p": 23,
+    "of": 7,
+    "rows": 21,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 4,
+    "label": "m01001"
+   },
+   {
+    "p": 23,
+    "of": 7,
+    "rows": 39,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 4,
+    "label": "m01313"
+   },
+   {
+    "p": 24,
+    "of": 7,
+    "rows": 26,
+    "g": 1,
+    "dose": 50,
+    "r": 0,
+    "n": 0,
+    "label": "m03600"
+   },
+   {
+    "p": 24,
+    "of": 7,
+    "rows": 27,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m06347"
+   },
+   {
+    "p": 24,
+    "of": 7,
+    "rows": 28,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02464"
+   },
+   {
+    "p": 24,
+    "of": 7,
+    "rows": 119,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m07039"
+   },
+   {
+    "p": 25,
+    "of": 7,
+    "rows": 30,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00387"
+   },
+   {
+    "p": 26,
+    "of": 6,
+    "rows": 28,
+    "g": 1,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m04150"
+   },
+   {
+    "p": 26,
+    "of": 6,
+    "rows": 30,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m03344"
+   },
+   {
+    "p": 26,
+    "of": 6,
+    "rows": 32,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m06341"
+   },
+   {
+    "p": 27,
+    "of": 6,
+    "rows": 23,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 0,
+    "label": "m00685"
+   },
+   {
+    "p": 29,
+    "of": 5,
+    "rows": 34,
+    "g": 1,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m01021"
+   },
+   {
+    "p": 29,
+    "of": 5,
+    "rows": 35,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m06994"
+   },
+   {
+    "p": 30,
+    "of": 5,
+    "rows": 75,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04161"
+   },
+   {
+    "p": 30,
+    "of": 5,
+    "rows": 78,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m02452"
+   },
+   {
+    "p": 31,
+    "of": 4,
+    "rows": 44,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04700"
+   },
+   {
+    "p": 36,
+    "of": 3,
+    "rows": 32,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m07478"
+   },
+   {
+    "p": 36,
+    "of": 3,
+    "rows": 59,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m04688"
+   },
+   {
+    "p": 38,
+    "of": 3,
+    "rows": 24,
+    "g": 1,
+    "dose": 10,
+    "r": 0,
+    "n": 4,
+    "label": "m07406"
+   },
+   {
+    "p": 38,
+    "of": 3,
+    "rows": 25,
+    "g": 1,
+    "dose": 20,
+    "r": 0,
+    "n": 0,
+    "label": "m00296"
+   },
+   {
+    "p": 40,
+    "of": 3,
+    "rows": 41,
+    "g": 1,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m00364"
+   },
+   {
+    "p": 40,
+    "of": 3,
+    "rows": 46,
+    "g": 1,
+    "dose": 40,
+    "r": 0,
+    "n": 4,
+    "label": "m03286"
+   },
+   {
+    "p": 43,
+    "of": 2,
+    "rows": 54,
+    "g": 1,
+    "dose": 30,
+    "r": 0,
+    "n": 0,
+    "label": "m01635"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 44,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06268"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 50,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06962"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 51,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m00080"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 56,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m00320"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 60,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 6,
+    "label": "m06124"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 156,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06919"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 177,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m05023"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 178,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m01527"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 203,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m00678"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 206,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m04562"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 347,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m01678"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 360,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m01223"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 361,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m02802"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 430,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06572"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 501,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m02648"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 517,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m04313"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 604,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06816"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 606,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m01323"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 608,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07385"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 610,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m03009"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 691,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01335"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 701,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 4,
+    "label": "m03914"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 710,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m04267"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 712,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 4,
+    "label": "m05279"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 715,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05683"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 718,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m02097"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 722,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03944"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 747,
+    "g": 2,
+    "dose": 20,
+    "r": 1,
+    "n": 0,
+    "label": "m03397"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 764,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 4,
+    "label": "m00859"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 765,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 4,
+    "label": "m03751"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 766,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m07461"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 770,
+    "g": 2,
+    "dose": 50,
+    "r": 4,
+    "n": 0,
+    "label": "m05704"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 779,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m06119"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 783,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m04603"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 784,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m06118"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 785,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m05718"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 793,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m05816"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 794,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m06881"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 800,
+    "g": 2,
+    "dose": 30,
+    "r": 3,
+    "n": 0,
+    "label": "m04108"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 801,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m06719"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 802,
+    "g": 2,
+    "dose": 30,
+    "r": 3,
+    "n": 0,
+    "label": "m05579"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 806,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m05227"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 808,
+    "g": 2,
+    "dose": 60,
+    "r": 3,
+    "n": 0,
+    "label": "m07395"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 810,
+    "g": 2,
+    "dose": 40,
+    "r": 3,
+    "n": 0,
+    "label": "m02963"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 812,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 0,
+    "label": "m01992"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 813,
+    "g": 2,
+    "dose": 20,
+    "r": 1,
+    "n": 0,
+    "label": "m05102"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 814,
+    "g": 2,
+    "dose": 20,
+    "r": 1,
+    "n": 0,
+    "label": "m05324"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 816,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m03620"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 817,
+    "g": 2,
+    "dose": 70,
+    "r": 3,
+    "n": 0,
+    "label": "m06486"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 818,
+    "g": 2,
+    "dose": 40,
+    "r": 3,
+    "n": 4,
+    "label": "m02287"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 819,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 0,
+    "label": "m00616"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 820,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m00239"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 830,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m01946"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 831,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06000"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 832,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03151"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 834,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m05434"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 835,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m03326"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 836,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 4,
+    "label": "m07570"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 837,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 4,
+    "label": "m05770"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 838,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03155"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 840,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 4,
+    "label": "m00442"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 841,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 4,
+    "label": "m01297"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 842,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 4,
+    "label": "m05047"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 843,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00888"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 844,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m02965"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 845,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07435"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 852,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01954"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 853,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05056"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 864,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m02063"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 867,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m06551"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 868,
+    "g": 2,
+    "dose": 50,
+    "r": 4,
+    "n": 0,
+    "label": "m04570"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 869,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 6,
+    "label": "m07543"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 870,
+    "g": 2,
+    "dose": 70,
+    "r": 2,
+    "n": 4,
+    "label": "m00330"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 871,
+    "g": 2,
+    "dose": 70,
+    "r": 2,
+    "n": 0,
+    "label": "m03467"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 872,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 4,
+    "label": "m01307"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 874,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m02724"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 875,
+    "g": 2,
+    "dose": 80,
+    "r": 2,
+    "n": 0,
+    "label": "m06767"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 876,
+    "g": 2,
+    "dose": 80,
+    "r": 2,
+    "n": 0,
+    "label": "m00104"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 881,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m03409"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 882,
+    "g": 2,
+    "dose": 30,
+    "r": 4,
+    "n": 0,
+    "label": "m01576"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 883,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m03079"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 900,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 0,
+    "label": "m03350"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 901,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m06931"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 903,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m01096"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 905,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 0,
+    "label": "m06877"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 906,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m03578"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 907,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m04228"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 909,
+    "g": 2,
+    "dose": 50,
+    "r": 4,
+    "n": 0,
+    "label": "m06782"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 910,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 4,
+    "label": "m04510"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 911,
+    "g": 2,
+    "dose": 70,
+    "r": 2,
+    "n": 4,
+    "label": "m07532"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 912,
+    "g": 2,
+    "dose": 30,
+    "r": 4,
+    "n": 4,
+    "label": "m06694"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 928,
+    "g": 2,
+    "dose": 70,
+    "r": 4,
+    "n": 0,
+    "label": "m02420"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 929,
+    "g": 2,
+    "dose": 60,
+    "r": 2,
+    "n": 0,
+    "label": "m06297"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 930,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06910"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 946,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 0,
+    "label": "m01012"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 961,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 4,
+    "label": "m04071"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 962,
+    "g": 2,
+    "dose": 70,
+    "r": 4,
+    "n": 4,
+    "label": "m01477"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 963,
+    "g": 2,
+    "dose": 70,
+    "r": 2,
+    "n": 0,
+    "label": "m01180"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 964,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03284"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 972,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00264"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 998,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05140"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1000,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00655"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1007,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 4,
+    "label": "m00109"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1008,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m02324"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1009,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m00982"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1010,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m05032"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1012,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m03483"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1041,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m01454"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1043,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m04686"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1044,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m04302"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1045,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m03089"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1046,
+    "g": 2,
+    "dose": 100,
+    "r": 2,
+    "n": 0,
+    "label": "m01654"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1047,
+    "g": 2,
+    "dose": 70,
+    "r": 2,
+    "n": 4,
+    "label": "m00477"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1048,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 4,
+    "label": "m03137"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1049,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m02918"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1053,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m00335"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1054,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07445"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1055,
+    "g": 2,
+    "dose": 80,
+    "r": 2,
+    "n": 0,
+    "label": "m00343"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1057,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07426"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1073,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m04212"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1074,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m02281"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1099,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m07035"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1125,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m00973"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1135,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 0,
+    "label": "m04747"
+   },
+   {
+    "p": 1,
+    "of": 128,
+    "rows": 1136,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 0,
+    "label": "m02556"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 49,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m06334"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 91,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 4,
+    "label": "m04988"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 92,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m06776"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 99,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m05984"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 101,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07340"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 104,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m07498"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 106,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 4,
+    "label": "m06303"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 107,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m02430"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 108,
+    "g": 2,
+    "dose": 80,
+    "r": 3,
+    "n": 0,
+    "label": "m02892"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 109,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 4,
+    "label": "m00972"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 111,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m06852"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 112,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m07312"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 114,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m00949"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 115,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m00004"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 123,
+    "g": 2,
+    "dose": 10,
+    "r": 1,
+    "n": 0,
+    "label": "m07145"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 127,
+    "g": 2,
+    "dose": 30,
+    "r": 4,
+    "n": 4,
+    "label": "m07437"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 128,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 4,
+    "label": "m01027"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 130,
+    "g": 2,
+    "dose": 60,
+    "r": 3,
+    "n": 0,
+    "label": "m02016"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 132,
+    "g": 2,
+    "dose": 60,
+    "r": 3,
+    "n": 0,
+    "label": "m04469"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 133,
+    "g": 2,
+    "dose": 50,
+    "r": 1,
+    "n": 0,
+    "label": "m04559"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 134,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 4,
+    "label": "m05563"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 136,
+    "g": 2,
+    "dose": 50,
+    "r": 1,
+    "n": 0,
+    "label": "m01101"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 137,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 4,
+    "label": "m05120"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 138,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m04881"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 139,
+    "g": 2,
+    "dose": 40,
+    "r": 3,
+    "n": 0,
+    "label": "m05401"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 142,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m03415"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 143,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m00131"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 147,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m05130"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 155,
+    "g": 2,
+    "dose": 30,
+    "r": 4,
+    "n": 0,
+    "label": "m05458"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 159,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m05442"
+   },
+   {
+    "p": 2,
+    "of": 42,
+    "rows": 221,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m05427"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 40,
+    "g": 2,
+    "dose": 30,
+    "r": 3,
+    "n": 0,
+    "label": "m01662"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 49,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m05941"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 50,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01200"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 51,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 6,
+    "label": "m02807"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 54,
+    "g": 2,
+    "dose": 10,
+    "r": 1,
+    "n": 0,
+    "label": "m03516"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 56,
+    "g": 2,
+    "dose": 60,
+    "r": 3,
+    "n": 0,
+    "label": "m05135"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 58,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m07025"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 63,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01976"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 64,
+    "g": 2,
+    "dose": 10,
+    "r": 0,
+    "n": 0,
+    "label": "m00823"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 65,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06385"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 68,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05616"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 69,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05345"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 71,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 4,
+    "label": "m00062"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 72,
+    "g": 2,
+    "dose": 30,
+    "r": 3,
+    "n": 0,
+    "label": "m04222"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 74,
+    "g": 2,
+    "dose": 40,
+    "r": 3,
+    "n": 4,
+    "label": "m05945"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 75,
+    "g": 2,
+    "dose": 70,
+    "r": 3,
+    "n": 0,
+    "label": "m06860"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 76,
+    "g": 2,
+    "dose": 70,
+    "r": 1,
+    "n": 0,
+    "label": "m06273"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 78,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 4,
+    "label": "m00789"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 83,
+    "g": 2,
+    "dose": 110,
+    "r": 3,
+    "n": 0,
+    "label": "m04656"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 84,
+    "g": 2,
+    "dose": 40,
+    "r": 3,
+    "n": 0,
+    "label": "m01318"
+   },
+   {
+    "p": 3,
+    "of": 38,
+    "rows": 85,
+    "g": 2,
+    "dose": 60,
+    "r": 3,
+    "n": 4,
+    "label": "m04658"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 21,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m03610"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 50,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m00766"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 58,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m06264"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 76,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m05914"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 127,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m04223"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 149,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m04883"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 151,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 4,
+    "label": "m05673"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 189,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m05014"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 206,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m02166"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 208,
+    "g": 2,
+    "dose": 60,
+    "r": 2,
+    "n": 0,
+    "label": "m03069"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 210,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 4,
+    "label": "m05414"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 211,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05903"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 241,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 4,
+    "label": "m01981"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 260,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06508"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 261,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m03091"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 264,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m07303"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 272,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m01524"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 275,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 4,
+    "label": "m06674"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 313,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01871"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 346,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 4,
+    "label": "m06774"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 349,
+    "g": 2,
+    "dose": 350,
+    "r": 3,
+    "n": 0,
+    "label": "m01050"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 362,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m02457"
+   },
+   {
+    "p": 4,
+    "of": 35,
+    "rows": 363,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m02941"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 35,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06653"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 46,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m03328"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 60,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03637"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 69,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06856"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 70,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m01639"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 100,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m04734"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 129,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07473"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 156,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06903"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 158,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m01074"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 164,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m04456"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 166,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m02257"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 171,
+    "g": 2,
+    "dose": 10,
+    "r": 1,
+    "n": 0,
+    "label": "m00182"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 173,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m02303"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 176,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06682"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 177,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m06245"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 179,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05003"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 195,
+    "g": 2,
+    "dose": 60,
+    "r": 3,
+    "n": 0,
+    "label": "m03618"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 205,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m07451"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 206,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 4,
+    "label": "m05082"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 228,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06372"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 242,
+    "g": 2,
+    "dose": 10,
+    "r": 1,
+    "n": 4,
+    "label": "m03305"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 247,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06500"
+   },
+   {
+    "p": 5,
+    "of": 32,
+    "rows": 287,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m04765"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 23,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m00247"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 88,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m07361"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 89,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m07116"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 91,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m06059"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 94,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 0,
+    "label": "m01148"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 95,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m04240"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 97,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m06575"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 98,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m01051"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 101,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m00998"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 107,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m03526"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 123,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m00316"
+   },
+   {
+    "p": 6,
+    "of": 27,
+    "rows": 273,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00866"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 32,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m04639"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 33,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m02646"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 34,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m05336"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 57,
+    "g": 2,
+    "dose": 60,
+    "r": 2,
+    "n": 0,
+    "label": "m06472"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 61,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m03154"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 104,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m02578"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 108,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m03661"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 111,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m02386"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 160,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m00426"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 230,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m02671"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 236,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 4,
+    "label": "m06842"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 281,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01418"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 282,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m00777"
+   },
+   {
+    "p": 7,
+    "of": 26,
+    "rows": 286,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m05043"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 25,
+    "g": 2,
+    "dose": 30,
+    "r": 1,
+    "n": 0,
+    "label": "m02886"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 27,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m03545"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 28,
+    "g": 2,
+    "dose": 10,
+    "r": 1,
+    "n": 4,
+    "label": "m07558"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 38,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m06660"
+   },
+   {
+    "p": 9,
+    "of": 19,
+    "rows": 39,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m00425"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 96,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m01819"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 97,
+    "g": 2,
+    "dose": 70,
+    "r": 2,
+    "n": 4,
+    "label": "m04237"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 112,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m02212"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 132,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m05918"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 133,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m05597"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 143,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m02068"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 153,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 4,
+    "label": "m05412"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 155,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m05157"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 157,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m06251"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 162,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m07179"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 164,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m04759"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 166,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m03145"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 168,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m04421"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 169,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 6,
+    "label": "m02320"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 201,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m02252"
+   },
+   {
+    "p": 10,
+    "of": 18,
+    "rows": 203,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m00590"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 81,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m03143"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 82,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m05676"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 85,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 4,
+    "label": "m01711"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 232,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m05090"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 442,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07309"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 447,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m01698"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 480,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00085"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 481,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m00368"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 490,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 4,
+    "label": "m06045"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 493,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00840"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 494,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01855"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 553,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 4,
+    "label": "m02142"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 596,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00728"
+   },
+   {
+    "p": 11,
+    "of": 17,
+    "rows": 617,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m07086"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 29,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m01854"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 30,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 4,
+    "label": "m00778"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 40,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00097"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 44,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m04230"
+   },
+   {
+    "p": 12,
+    "of": 16,
+    "rows": 46,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m07559"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 28,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 0,
+    "label": "m01988"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 29,
+    "g": 2,
+    "dose": 20,
+    "r": 1,
+    "n": 4,
+    "label": "m00819"
+   },
+   {
+    "p": 13,
+    "of": 14,
+    "rows": 30,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m00347"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 28,
+    "g": 2,
+    "dose": 70,
+    "r": 2,
+    "n": 0,
+    "label": "m04797"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 34,
+    "g": 2,
+    "dose": 10,
+    "r": 3,
+    "n": 0,
+    "label": "m00428"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 35,
+    "g": 2,
+    "dose": 130,
+    "r": 3,
+    "n": 0,
+    "label": "m00519"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 48,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m03141"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 54,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m00433"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 55,
+    "g": 2,
+    "dose": 60,
+    "r": 2,
+    "n": 0,
+    "label": "m01499"
+   },
+   {
+    "p": 14,
+    "of": 13,
+    "rows": 57,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 4,
+    "label": "m06233"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 42,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m00346"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 54,
+    "g": 2,
+    "dose": 50,
+    "r": 4,
+    "n": 0,
+    "label": "m01931"
+   },
+   {
+    "p": 15,
+    "of": 13,
+    "rows": 57,
+    "g": 2,
+    "dose": 30,
+    "r": 3,
+    "n": 0,
+    "label": "m00321"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 54,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m05486"
+   },
+   {
+    "p": 16,
+    "of": 11,
+    "rows": 67,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m05551"
+   },
+   {
+    "p": 17,
+    "of": 11,
+    "rows": 43,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06025"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 74,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03747"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 77,
+    "g": 2,
+    "dose": 20,
+    "r": 3,
+    "n": 0,
+    "label": "m06068"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 78,
+    "g": 2,
+    "dose": 30,
+    "r": 1,
+    "n": 0,
+    "label": "m02798"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 79,
+    "g": 2,
+    "dose": 30,
+    "r": 1,
+    "n": 0,
+    "label": "m03323"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 81,
+    "g": 2,
+    "dose": 40,
+    "r": 3,
+    "n": 0,
+    "label": "m02021"
+   },
+   {
+    "p": 18,
+    "of": 10,
+    "rows": 82,
+    "g": 2,
+    "dose": 40,
+    "r": 4,
+    "n": 0,
+    "label": "m06502"
+   },
+   {
+    "p": 19,
+    "of": 9,
+    "rows": 73,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06937"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 25,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 0,
+    "label": "m06735"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 26,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 0,
+    "label": "m05446"
+   },
+   {
+    "p": 20,
+    "of": 8,
+    "rows": 45,
+    "g": 2,
+    "dose": 40,
+    "r": 2,
+    "n": 0,
+    "label": "m02123"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 32,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06602"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 44,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 4,
+    "label": "m00266"
+   },
+   {
+    "p": 21,
+    "of": 8,
+    "rows": 46,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 0,
+    "label": "m01263"
+   },
+   {
+    "p": 22,
+    "of": 7,
+    "rows": 41,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06269"
+   },
+   {
+    "p": 22,
+    "of": 7,
+    "rows": 63,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m07077"
+   },
+   {
+    "p": 22,
+    "of": 7,
+    "rows": 92,
+    "g": 2,
+    "dose": 10,
+    "r": 4,
+    "n": 0,
+    "label": "m00726"
+   },
+   {
+    "p": 22,
+    "of": 7,
+    "rows": 93,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03278"
+   },
+   {
+    "p": 23,
+    "of": 7,
+    "rows": 33,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m04913"
+   },
+   {
+    "p": 23,
+    "of": 7,
+    "rows": 38,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m03066"
+   },
+   {
+    "p": 23,
+    "of": 7,
+    "rows": 41,
+    "g": 2,
+    "dose": 40,
+    "r": 3,
+    "n": 0,
+    "label": "m01898"
+   },
+   {
+    "p": 23,
+    "of": 7,
+    "rows": 44,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03575"
+   },
+   {
+    "p": 24,
+    "of": 7,
+    "rows": 165,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06132"
+   },
+   {
+    "p": 24,
+    "of": 7,
+    "rows": 194,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m04779"
+   },
+   {
+    "p": 25,
+    "of": 7,
+    "rows": 29,
+    "g": 2,
+    "dose": 50,
+    "r": 2,
+    "n": 0,
+    "label": "m01039"
+   },
+   {
+    "p": 25,
+    "of": 7,
+    "rows": 49,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06051"
+   },
+   {
+    "p": 26,
+    "of": 6,
+    "rows": 29,
+    "g": 2,
+    "dose": 10,
+    "r": 1,
+    "n": 4,
+    "label": "m01531"
+   },
+   {
+    "p": 28,
+    "of": 6,
+    "rows": 79,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m05088"
+   },
+   {
+    "p": 28,
+    "of": 6,
+    "rows": 80,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m02517"
+   },
+   {
+    "p": 28,
+    "of": 6,
+    "rows": 119,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m03362"
+   },
+   {
+    "p": 28,
+    "of": 6,
+    "rows": 248,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m03388"
+   },
+   {
+    "p": 28,
+    "of": 6,
+    "rows": 249,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m06293"
+   },
+   {
+    "p": 28,
+    "of": 6,
+    "rows": 255,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m05116"
+   },
+   {
+    "p": 29,
+    "of": 5,
+    "rows": 36,
+    "g": 2,
+    "dose": 50,
+    "r": 3,
+    "n": 0,
+    "label": "m07308"
+   },
+   {
+    "p": 30,
+    "of": 5,
+    "rows": 81,
+    "g": 2,
+    "dose": 20,
+    "r": 1,
+    "n": 0,
+    "label": "m06889"
+   },
+   {
+    "p": 30,
+    "of": 5,
+    "rows": 83,
+    "g": 2,
+    "dose": 20,
+    "r": 1,
+    "n": 4,
+    "label": "m05858"
+   },
+   {
+    "p": 31,
+    "of": 4,
+    "rows": 68,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m00243"
+   },
+   {
+    "p": 31,
+    "of": 4,
+    "rows": 123,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m07209"
+   },
+   {
+    "p": 31,
+    "of": 4,
+    "rows": 132,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m04620"
+   },
+   {
+    "p": 39,
+    "of": 3,
+    "rows": 32,
+    "g": 2,
+    "dose": 20,
+    "r": 4,
+    "n": 0,
+    "label": "m06958"
+   },
+   {
+    "p": 39,
+    "of": 3,
+    "rows": 33,
+    "g": 2,
+    "dose": 20,
+    "r": 2,
+    "n": 0,
+    "label": "m06750"
+   },
+   {
+    "p": 40,
+    "of": 3,
+    "rows": 45,
+    "g": 2,
+    "dose": 30,
+    "r": 2,
+    "n": 0,
+    "label": "m05929"
+   },
+   {
+    "p": 41,
+    "of": 2,
+    "rows": 159,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m01881"
+   },
+   {
+    "p": 41,
+    "of": 2,
+    "rows": 208,
+    "g": 2,
+    "dose": 10,
+    "r": 2,
+    "n": 0,
+    "label": "m02400"
+   },
+   {
+    "p": 43,
+    "of": 2,
+    "rows": 61,
+    "g": 2,
+    "dose": 140,
+    "r": 2,
+    "n": 0,
+    "label": "m01666"
+   }
+  ]
+ },
+ "released_cases_same_requests": {
+  "control_pilot vs control_repeat": {
+   "cases": 30,
+   "same_requests_in_the_same_order": 16
+  },
+  "control_pilot vs control_via_standin": {
+   "cases": 30,
+   "same_requests_in_the_same_order": 14
+  }
+ },
+ "grader_comparison": {
+  "batches": [
+   "replace",
+   "replace_newest",
+   "replace_hint",
+   "replace_table"
+  ],
+  "runs": 1658,
+  "relaxed_pass": 1109,
+  "released_pass": 0,
+  "relaxed_pass_route_written_as_object": 1109,
+  "relaxed_pass_final_answer": {
+   "a list holding one or more sentences": 1109
+  },
+  "required_dose_but_relaxed_fail": {
+   "the test order's priority is not stat": 20
+  },
+  "relaxed_pass_but_content_check_fails": {}
+ },
+ "fields_the_model_wrote": {
+  "medication_orders": 1200,
+  "route_written_as_an_object": 1197,
+  "test_orders": 1200,
+  "priority_stat": 1179,
+  "priority_routine": 21,
+  "route_absent": 3
+ },
+ "instance_with_the_largest_required_dose": {
+  "required_dose_mEq": 350,
+  "runs": {
+   "replace": {
+    "placed_an_order": true,
+    "dose_ordered_mEq": 10,
+    "relaxed_grader_pass": false,
+    "a_reply_held_the_most_recent_result": false,
+    "final_answer_calls_the_value_invalid": false
+   },
+   "replace_newest": {
+    "placed_an_order": true,
+    "dose_ordered_mEq": 350,
+    "relaxed_grader_pass": true,
+    "a_reply_held_the_most_recent_result": true,
+    "final_answer_calls_the_value_invalid": false
+   },
+   "replace_hint": {
+    "placed_an_order": false,
+    "dose_ordered_mEq": null,
+    "relaxed_grader_pass": false,
+    "a_reply_held_the_most_recent_result": false,
+    "final_answer_calls_the_value_invalid": false
+   },
+   "replace_table": {
+    "placed_an_order": false,
+    "dose_ordered_mEq": null,
+    "relaxed_grader_pass": false,
+    "a_reply_held_the_most_recent_result": false,
+    "final_answer_calls_the_value_invalid": true
+   }
+  }
+ },
+ "all_runs": {
+  "runs": 2506,
+  "released_grader_pass": 0,
+  "final_answer": {
+   "a list holding one or more sentences": 2496,
+   "did not finish": 10
+  },
+  "runs_that_did_not_finish": {
+   "by_status": {
+    "provider_failure:no_content": 7,
+    "invalid_action": 3
+   },
+   "by_batch": {
+    "conflict": 1,
+    "conflict_table": 6,
+    "notLow_table": 3
+   }
+  }
+ },
+ "moments_where_latest_results_disagree": {
+  "conflictHard_table": {
+   "runs": 29,
+   "placed_no_order": 4,
+   "said_so": 0,
+   "placed_no_order_and_said_so": 0,
+   "dosed_from_the_lowest_value": 17,
+   "dosed_from_the_highest_value": 8
+  },
+  "conflictHard_contract": {
+   "runs": 29,
+   "placed_no_order": 29,
+   "said_so": 29,
+   "placed_no_order_and_said_so": 29
+  },
+  "conflict": {
+   "runs": 80,
+   "placed_no_order": 73,
+   "said_so": 0,
+   "placed_no_order_and_said_so": 0,
+   "dosed_from_the_lowest_value": 3,
+   "dosed_from_the_highest_value": 2
+  },
+  "conflict_table": {
+   "runs": 80,
+   "placed_no_order": 70,
+   "said_so": 0,
+   "placed_no_order_and_said_so": 0,
+   "dosed_from_the_lowest_value": 9,
+   "dosed_from_the_highest_value": 1
+  }
+ }
+}

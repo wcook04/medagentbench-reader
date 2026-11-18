@@ -1,0 +1,17 @@
+name = "clinicalrules"
+version = "0.1.0"
+defaultTargets = ["Potassium", "Creatinine"]
+
+[[lean_lib]]
+name = "Potassium"
+
+[[lean_exe]]
+name = "oracle"
+root = "Oracle"
+
+[[lean_lib]]
+name = "Creatinine"
+
+[[lean_exe]]
+name = "croracle"
+root = "CrOracle"

@@ -1,0 +1,102 @@
+{
+ "grader_sha256": "67d19da263ac92c1b7075b3218ace3a4bd19b206a06fc7aebcc897dc39625419",
+ "rows": "synthetic",
+ "controls": [
+  {
+   "id": "reference",
+   "submission": "Low result 3.1. Orders 40 mEq oral and a potassium level at 08:00 next day.",
+   "instruction": "meets",
+   "grader_pass": true
+  },
+  {
+   "id": "route_as_declared",
+   "submission": "Same orders; route written as the object the tool schema declares, {\"text\": \"oral\"}.",
+   "instruction": "meets",
+   "grader_pass": false
+  },
+  {
+   "id": "lab_first",
+   "submission": "Same two orders, lab order sent before the medication order.",
+   "instruction": "meets",
+   "grader_pass": false
+  },
+  {
+   "id": "priority_routine",
+   "submission": "Same orders; lab priority \"routine\".",
+   "instruction": "meets",
+   "grader_pass": false
+  },
+  {
+   "id": "unit_lowercase",
+   "submission": "Same orders; dose unit written \"meq\".",
+   "instruction": "meets",
+   "grader_pass": false
+  },
+  {
+   "id": "lab_0859",
+   "submission": "Lab ordered for 08:59:59 next day.",
+   "instruction": "does not meet",
+   "grader_pass": true
+  },
+  {
+   "id": "lab_other_zone",
+   "submission": "Lab ordered for 08:00 next day at UTC\u22128, which is 16:00 on the task's clock.",
+   "instruction": "does not meet",
+   "grader_pass": true
+  },
+  {
+   "id": "wrong_dose",
+   "submission": "Orders 20 mEq where the rule gives 40.",
+   "instruction": "does not meet",
+   "grader_pass": false
+  },
+  {
+   "id": "no_orders_low",
+   "submission": "Low result; no orders; empty answer.",
+   "instruction": "does not meet",
+   "grader_pass": false
+  },
+  {
+   "id": "no_result_no_orders",
+   "submission": "No potassium result in the record; no orders; empty answer.",
+   "instruction": "meets",
+   "grader_pass": true
+  },
+  {
+   "id": "normal_no_orders",
+   "submission": "Latest result 4.0; no orders; empty answer.",
+   "instruction": "meets",
+   "grader_pass": true
+  },
+  {
+   "id": "tie_low_first",
+   "submission": "Two results at the same time, 3.3 then 3.6 in server order; orders 20 mEq.",
+   "instruction": "undetermined",
+   "grader_pass": true
+  },
+  {
+   "id": "tie_low_second",
+   "submission": "The same two results in the other order, 3.6 then 3.3; the same orders.",
+   "instruction": "undetermined",
+   "grader_pass": false
+  },
+  {
+   "id": "future_low",
+   "submission": "Latest result before the clock is 4.0. A result of 3.0 is dated one hour after the clock. No orders.",
+   "instruction": "meets",
+   "grader_pass": false
+  },
+  {
+   "id": "error_low",
+   "submission": "Latest result is 3.0 with status entered-in-error; the one before is 4.0. No orders.",
+   "instruction": "meets",
+   "grader_pass": false
+  },
+  {
+   "id": "very_low",
+   "submission": "Latest result 1.0. Orders 250 mEq oral, as the dosing sentence computes.",
+   "instruction": "meets",
+   "grader_pass": true
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "program": "Potassium.run (lean/Potassium.lean), executed through lean/Oracle.lean",
+ "benchmark_clock": {
+  "released_cases": {
+   "n": 30,
+   "outcomes": {
+    "notLow": 28,
+    "replace": 1,
+    "conflict": 1
+   },
+   "doses_mEq": [
+    40
+   ],
+   "cases_where_grader_requirement_depends_on_row_order_or_differs": 1,
+   "conflict_cases_where_every_tied_value_is_at_or_above_3.5": 1
+  },
+  "all_patients": {
+   "n": 100,
+   "outcomes": {
+    "notLow": 93,
+    "conflict": 3,
+    "replace": 4
+   },
+   "doses_mEq": [
+    40,
+    50,
+    50,
+    70
+   ]
+  }
+ },
+ "every_report_moment": {
+  "decision_points": 7590,
+  "patients": 100,
+  "outcomes": {
+   "notLow": 6705,
+   "replace": 629,
+   "conflict": 256
+  },
+  "patients_with_a_replacement_decision": 59,
+  "dose_histogram_mEq": {
+   "10": 203,
+   "20": 160,
+   "30": 88,
+   "40": 60,
+   "50": 52,
+   "60": 24,
+   "70": 22,
+   "80": 7,
+   "90": 4,
+   "100": 4,
+   "110": 2,
+   "130": 1,
+   "140": 1,
+   "350": 1
+  },
+  "decisions_over_20_mEq": 266,
+  "decisions_over_40_mEq": 118,
+  "decisions_over_60_mEq": 42,
+  "conflicts": {
+   "all_at_or_above_3.5": 227,
+   "all_below_3.5_doses_differ": 17,
+   "either_side_of_3.5": 12
+  },
+  "conflicts_where_the_released_grader_requires_orders": {
+   "all_at_or_above_3.5": 0,
+   "all_below_3.5_doses_differ": 17,
+   "either_side_of_3.5": 7
+  },
+  "decisions_over_100_mEq": 5,
+  "largest_dose_mEq": 350
+ },
+ "counted_results_at_the_latest_time": {
+  "1": 7178,
+  "2": 385,
+  "3": 27
+ },
+ "default_search_first_page": {
+  "note": "the released server answers a search with no _count and no _sort with its 20 lowest-numbered results",
+  "released_cases": [
+   {
+    "chart": "fits_one_page",
+    "first_page_holds_latest_result": true,
+    "cases": 10
+   },
+   {
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": false,
+    "cases": 12
+   },
+   {
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": true,
+    "cases": 8
+   }
+  ],
+  "report_moments": [
+   {
+    "outcome": "conflict",
+    "chart": "fits_one_page",
+    "first_page_holds_latest_result": true,
+    "moments": 23
+   },
+   {
+    "outcome": "conflict",
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": false,
+    "moments": 133
+   },
+   {
+    "outcome": "conflict",
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": true,
+    "moments": 100
+   },
+   {
+    "outcome": "notLow",
+    "chart": "fits_one_page",
+    "first_page_holds_latest_result": true,
+    "moments": 1221
+   },
+   {
+    "outcome": "notLow",
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": false,
+    "moments": 4131
+   },
+   {
+    "outcome": "notLow",
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": true,
+    "moments": 1353
+   },
+   {
+    "outcome": "replace",
+    "chart": "fits_one_page",
+    "first_page_holds_latest_result": true,
+    "moments": 129
+   },
+   {
+    "outcome": "replace",
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": false,
+    "moments": 349
+   },
+   {
+    "outcome": "replace",
+    "chart": "over_20_rows",
+    "first_page_holds_latest_result": true,
+    "moments": 151
+   }
+  ]
+ },
+ "same_time_results": {
+  "times_with_more_than_one_result": 407,
+  "with_different_values": 253,
+  "of_those_with_different_issued_times": 227
+ },
+ "availability": {
+  "result_issue_moments": 7702,
+  "moments_when_a_more_recent_specimen_was_still_unreported": 69
+ },
+ "orders_after_low_result": [
+  {
+   "rule_dose_mEq": 10,
+   "decision_points": 203,
+   "with_potassium_chloride_order_within_6h": 12,
+   "median_ordered_mEq": 20.0,
+   "max_ordered_mEq": 70
+  },
+  {
+   "rule_dose_mEq": 20,
+   "decision_points": 160,
+   "with_potassium_chloride_order_within_6h": 5,
+   "median_ordered_mEq": 20,
+   "max_ordered_mEq": 60
+  },
+  {
+   "rule_dose_mEq": 30,
+   "decision_points": 88,
+   "with_potassium_chloride_order_within_6h": 8,
+   "median_ordered_mEq": 20.0,
+   "max_ordered_mEq": 40
+  },
+  {
+   "rule_dose_mEq": 40,
+   "decision_points": 60,
+   "with_potassium_chloride_order_within_6h": 3,
+   "median_ordered_mEq": 20,
+   "max_ordered_mEq": 60
+  },
+  {
+   "rule_dose_mEq": 50,
+   "decision_points": 52,
+   "with_potassium_chloride_order_within_6h": 6,
+   "median_ordered_mEq": 50.0,
+   "max_ordered_mEq": 70
+  },
+  {
+   "rule_dose_mEq": 60,
+   "decision_points": 24,
+   "with_potassium_chloride_order_within_6h": 1,
+   "median_ordered_mEq": 10,
+   "max_ordered_mEq": 10
+  },
+  {
+   "rule_dose_mEq": 70,
+   "decision_points": 22,
+   "with_potassium_chloride_order_within_6h": 2,
+   "median_ordered_mEq": 10.0,
+   "max_ordered_mEq": 10
+  },
+  {
+   "rule_dose_mEq": 80,
+   "decision_points": 7,
+   "with_potassium_chloride_order_within_6h": 1,
+   "median_ordered_mEq": 10,
+   "max_ordered_mEq": 10
+  },
+  {
+   "rule_dose_mEq": 90,
+   "decision_points": 4,
+   "with_potassium_chloride_order_within_6h": 0,
+   "median_ordered_mEq": null,
+   "max_ordered_mEq": null
+  },
+  {
+   "rule_dose_mEq": 100,
+   "decision_points": 4,
+   "with_potassium_chloride_order_within_6h": 0,
+   "median_ordered_mEq": null,
+   "max_ordered_mEq": null
+  },
+  {
+   "rule_dose_mEq": 110,
+   "decision_points": 2,
+   "with_potassium_chloride_order_within_6h": 0,
+   "median_ordered_mEq": null,
+   "max_ordered_mEq": null
+  },
+  {
+   "rule_dose_mEq": 130,
+   "decision_points": 1,
+   "with_potassium_chloride_order_within_6h": 0,
+   "median_ordered_mEq": null,
+   "max_ordered_mEq": null
+  },
+  {
+   "rule_dose_mEq": 140,
+   "decision_points": 1,
+   "with_potassium_chloride_order_within_6h": 0,
+   "median_ordered_mEq": null,
+   "max_ordered_mEq": null
+  },
+  {
+   "rule_dose_mEq": 350,
+   "decision_points": 1,
+   "with_potassium_chloride_order_within_6h": 0,
+   "median_ordered_mEq": null,
+   "max_ordered_mEq": null
+  }
+ ],
+ "recorded_potassium_chloride_orders": {
+  "n": 417,
+  "dose_histogram_mEq": {
+   "8": 1,
+   "10": 101,
+   "20": 180,
+   "30": 19,
+   "40": 105,
+   "60": 11
+  }
+ },
+ "follow_up_after_low_result": {
+  "low_points": 629,
+  "next_calendar_day": 545,
+  "next_day_06_to_10": 148,
+  "no_later_result": 4
+ }
+}

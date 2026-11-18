@@ -1,0 +1,1956 @@
+{
+ "note": "Complete runs from the study, for illustration. Potassium values are from the benchmark's released, de-identified records. Patient identifiers are replaced, and every time in a chart is shifted by one amount, so that the instance falls on the benchmark's clock.",
+ "examples": [
+  {
+   "batch": "replace",
+   "label": "m04797",
+   "title": "The most recent result was on the second page; no order",
+   "chosen_because": "the smallest potassium history of more than 20 results on which the run with the default sort order read only the first page and submitted no order, and the run on the same instance with the most recent results first passed",
+   "patient_shown_as": "S8004797",
+   "results_in_chart": 28,
+   "required": {
+    "outcome": "replace",
+    "dose_mEq": 70
+   },
+   "chart": [
+    {
+     "n": 1,
+     "taken": "2023-11-11T20:22:00+00:00",
+     "value": 3.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 2,
+     "taken": "2023-11-12T09:06:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 3,
+     "taken": "2023-11-07T02:08:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 4,
+     "taken": "2023-11-06T07:38:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 5,
+     "taken": "2023-11-05T12:18:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 6,
+     "taken": "2023-11-11T20:15:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 7,
+     "taken": "2023-11-11T07:45:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 8,
+     "taken": "2023-11-12T17:00:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 9,
+     "taken": "2023-11-06T10:06:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 10,
+     "taken": "2023-11-12T01:42:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 11,
+     "taken": "2023-11-13T06:41:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 12,
+     "taken": "2023-11-06T00:07:00+00:00",
+     "value": 4.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 13,
+     "taken": "2023-11-09T21:56:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 14,
+     "taken": "2023-11-05T12:19:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 15,
+     "taken": "2023-11-06T10:42:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 16,
+     "taken": "2023-11-12T07:16:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 17,
+     "taken": "2023-11-08T20:26:00+00:00",
+     "value": 3.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 18,
+     "taken": "2023-11-13T09:04:00+00:00",
+     "value": 3.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 19,
+     "taken": "2023-11-12T19:44:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 20,
+     "taken": "2023-11-06T13:45:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 21,
+     "taken": "2023-11-13T10:15:00+00:00",
+     "value": 2.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": true
+    },
+    {
+     "n": 22,
+     "taken": "2023-11-10T21:34:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 23,
+     "taken": "2023-11-06T00:06:00+00:00",
+     "value": 4.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 24,
+     "taken": "2023-11-07T17:48:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 25,
+     "taken": "2023-11-06T16:27:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 26,
+     "taken": "2023-11-07T20:07:00+00:00",
+     "value": 4.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 27,
+     "taken": "2023-11-06T12:01:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 28,
+     "taken": "2023-11-12T02:47:00+00:00",
+     "value": 3.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    }
+   ],
+   "turns": [
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=2823-3&patient=S8004797",
+     "returned": 0,
+     "total_stated": 0,
+     "next_page_link": false,
+     "rows": []
+    },
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=K&patient=S8004797",
+     "returned": 20,
+     "total_stated": null,
+     "next_page_link": true,
+     "rows": [
+      {
+       "taken": "2023-11-11T20:22:00+00:00",
+       "value": 3.3
+      },
+      {
+       "taken": "2023-11-12T09:06:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-07T02:08:00+00:00",
+       "value": 3.8
+      },
+      {
+       "taken": "2023-11-06T07:38:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-05T12:18:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-11T20:15:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-11T07:45:00+00:00",
+       "value": 3.8
+      },
+      {
+       "taken": "2023-11-12T17:00:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-06T10:06:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-12T01:42:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-13T06:41:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-11-06T00:07:00+00:00",
+       "value": 4.4
+      },
+      {
+       "taken": "2023-11-09T21:56:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-11-05T12:19:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-11-06T10:42:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-12T07:16:00+00:00",
+       "value": 3.4
+      },
+      {
+       "taken": "2023-11-08T20:26:00+00:00",
+       "value": 3.3
+      },
+      {
+       "taken": "2023-11-13T09:04:00+00:00",
+       "value": 3.9
+      },
+      {
+       "taken": "2023-11-12T19:44:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-06T13:45:00+00:00",
+       "value": 3.6
+      }
+     ]
+    },
+    {
+     "action": "FINISH",
+     "text": "FINISH([\"Patient S8004797's most recent serum potassium level is 3.9 mmol/L, collected on 2023-11-13 at 09:04. This is not low (goal 3.5 mmol/L), so no replacement potassium order was placed and no paired next-day morning serum potassium level was ordered.\"])"
+    }
+   ],
+   "matched_statement": false,
+   "relaxed_pass": false,
+   "released_pass": false,
+   "content_ok": false,
+   "outcome": "latest result never returned; the newest result it received was not low; no order",
+   "stanford_as_released": false,
+   "stanford_checks_failed": [],
+   "closing_message": "a list holding one or more sentences"
+  },
+  {
+   "batch": "replace_newest",
+   "label": "m04797",
+   "title": "The same instance with the most recent results first",
+   "chosen_because": "the same instance as the previous run, under the other condition",
+   "patient_shown_as": "S8004797",
+   "results_in_chart": 28,
+   "required": {
+    "outcome": "replace",
+    "dose_mEq": 70
+   },
+   "chart": [
+    {
+     "n": 1,
+     "taken": "2023-11-11T20:22:00+00:00",
+     "value": 3.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 2,
+     "taken": "2023-11-12T09:06:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 3,
+     "taken": "2023-11-07T02:08:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 4,
+     "taken": "2023-11-06T07:38:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 5,
+     "taken": "2023-11-05T12:18:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 6,
+     "taken": "2023-11-11T20:15:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 7,
+     "taken": "2023-11-11T07:45:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 8,
+     "taken": "2023-11-12T17:00:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 9,
+     "taken": "2023-11-06T10:06:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 10,
+     "taken": "2023-11-12T01:42:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 11,
+     "taken": "2023-11-13T06:41:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 12,
+     "taken": "2023-11-06T00:07:00+00:00",
+     "value": 4.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 13,
+     "taken": "2023-11-09T21:56:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 14,
+     "taken": "2023-11-05T12:19:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 15,
+     "taken": "2023-11-06T10:42:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 16,
+     "taken": "2023-11-12T07:16:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 17,
+     "taken": "2023-11-08T20:26:00+00:00",
+     "value": 3.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 18,
+     "taken": "2023-11-13T09:04:00+00:00",
+     "value": 3.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 19,
+     "taken": "2023-11-12T19:44:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 20,
+     "taken": "2023-11-06T13:45:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 21,
+     "taken": "2023-11-13T10:15:00+00:00",
+     "value": 2.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": true
+    },
+    {
+     "n": 22,
+     "taken": "2023-11-10T21:34:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 23,
+     "taken": "2023-11-06T00:06:00+00:00",
+     "value": 4.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 24,
+     "taken": "2023-11-07T17:48:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 25,
+     "taken": "2023-11-06T16:27:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 26,
+     "taken": "2023-11-07T20:07:00+00:00",
+     "value": 4.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 27,
+     "taken": "2023-11-06T12:01:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 28,
+     "taken": "2023-11-12T02:47:00+00:00",
+     "value": 3.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    }
+   ],
+   "turns": [
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=2823-3&patient=S8004797",
+     "returned": 0,
+     "total_stated": 0,
+     "next_page_link": false,
+     "rows": []
+    },
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=K&patient=S8004797",
+     "returned": 20,
+     "total_stated": null,
+     "next_page_link": true,
+     "rows": [
+      {
+       "taken": "2023-11-13T10:15:00+00:00",
+       "value": 2.8
+      },
+      {
+       "taken": "2023-11-13T09:04:00+00:00",
+       "value": 3.9
+      },
+      {
+       "taken": "2023-11-13T06:41:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-11-12T19:44:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-12T17:00:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-12T09:06:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-12T07:16:00+00:00",
+       "value": 3.4
+      },
+      {
+       "taken": "2023-11-12T02:47:00+00:00",
+       "value": 3.9
+      },
+      {
+       "taken": "2023-11-12T01:42:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-11T20:22:00+00:00",
+       "value": 3.3
+      },
+      {
+       "taken": "2023-11-11T20:15:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-11T07:45:00+00:00",
+       "value": 3.8
+      },
+      {
+       "taken": "2023-11-10T21:34:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-09T21:56:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-11-08T20:26:00+00:00",
+       "value": 3.3
+      },
+      {
+       "taken": "2023-11-07T20:07:00+00:00",
+       "value": 4.5
+      },
+      {
+       "taken": "2023-11-07T17:48:00+00:00",
+       "value": 3.4
+      },
+      {
+       "taken": "2023-11-07T02:08:00+00:00",
+       "value": 3.8
+      },
+      {
+       "taken": "2023-11-06T16:27:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-11-06T13:45:00+00:00",
+       "value": 3.6
+      }
+     ]
+    },
+    {
+     "action": "POST",
+     "url": "http://localhost:8080/fhir/MedicationRequest",
+     "payload": {
+      "resourceType": "MedicationRequest",
+      "medicationCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/ndc",
+         "code": "40032-917-01",
+         "display": "Potassium oral replacement"
+        }
+       ],
+       "text": "Potassium oral replacement"
+      },
+      "authoredOn": "2023-11-13T10:15:00+00:00",
+      "dosageInstruction": [
+       {
+        "route": {
+         "text": "Oral"
+        },
+        "doseAndRate": [
+         {
+          "doseQuantity": {
+           "value": 70,
+           "unit": "mEq"
+          }
+         }
+        ]
+       }
+      ],
+      "status": "active",
+      "intent": "order",
+      "subject": {
+       "reference": "Patient/S8004797"
+      }
+     }
+    },
+    {
+     "action": "POST",
+     "url": "http://localhost:8080/fhir/ServiceRequest",
+     "payload": {
+      "resourceType": "ServiceRequest",
+      "code": {
+       "coding": [
+        {
+         "system": "http://loinc.org",
+         "code": "2823-3",
+         "display": "Potassium [Moles/volume] in Serum or Plasma"
+        }
+       ]
+      },
+      "authoredOn": "2023-11-13T10:15:00+00:00",
+      "status": "active",
+      "intent": "order",
+      "priority": "stat",
+      "subject": {
+       "reference": "Patient/S8004797"
+      },
+      "occurrenceDateTime": "2023-11-14T08:00:00+00:00"
+     }
+    },
+    {
+     "action": "FINISH",
+     "text": "FINISH([\"Patient S8004797's most recent potassium level was 2.8 mmol/L on 2023-11-13T10:15:00+00:00, which is low (goal 3.5 mmol/L).\", \"Calculated oral potassium replacement: deficit 0.7 mmol/L; 0.7 / 0.1 = 7 increments; 7 \u00d7 10 mEq = 70 mEq.\", \"Ordered potassium oral replacement, NDC 40032-917-01, 70 mEq orally, status active, intent order.\", \"Paired order placed for morning serum potassium level (LOINC 2823-3) to be completed 2023-11-14T08:00:00+00:00.\"])"
+    }
+   ],
+   "matched_statement": true,
+   "relaxed_pass": true,
+   "released_pass": false,
+   "content_ok": true,
+   "outcome": "matched; a reply held the latest result",
+   "stanford_as_released": false,
+   "stanford_checks_failed": [
+    "route is the plain string oral"
+   ],
+   "closing_message": "a list holding one or more sentences"
+  },
+  {
+   "batch": "replace",
+   "label": "m03610",
+   "title": "Dose computed from an older result",
+   "chosen_because": "the smallest potassium history on which the run ordered a dose that equals the rule applied to the most recent result on the first page, which was not the patient's most recent result",
+   "patient_shown_as": "S8003610",
+   "results_in_chart": 21,
+   "required": {
+    "outcome": "replace",
+    "dose_mEq": 10
+   },
+   "chart": [
+    {
+     "n": 1,
+     "taken": "2023-11-12T05:15:00+00:00",
+     "value": 3.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 2,
+     "taken": "2023-11-10T14:27:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 3,
+     "taken": "2023-11-11T00:31:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 4,
+     "taken": "2023-09-14T16:31:00+00:00",
+     "value": 4.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 5,
+     "taken": "2023-11-12T14:50:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 6,
+     "taken": "2023-11-11T02:42:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 7,
+     "taken": "2023-05-18T21:05:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 8,
+     "taken": "2023-11-11T14:45:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 9,
+     "taken": "2023-11-10T23:03:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 10,
+     "taken": "2023-11-11T01:33:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 11,
+     "taken": "2023-11-11T09:33:00+00:00",
+     "value": 3.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 12,
+     "taken": "2023-11-11T23:38:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 13,
+     "taken": "2023-11-10T22:40:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 14,
+     "taken": "2023-11-10T23:22:00+00:00",
+     "value": 3.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 15,
+     "taken": "2023-11-13T03:00:00+00:00",
+     "value": 3.2,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 16,
+     "taken": "2023-11-10T20:36:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 17,
+     "taken": "2023-11-10T21:44:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 18,
+     "taken": "2023-04-24T20:27:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 19,
+     "taken": "2023-11-12T23:13:00+00:00",
+     "value": 2.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 20,
+     "taken": "2023-11-12T10:24:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 21,
+     "taken": "2023-11-13T09:28:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": true
+    }
+   ],
+   "turns": [
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=2823-3&patient=S8003610",
+     "returned": 0,
+     "total_stated": 0,
+     "next_page_link": false,
+     "rows": []
+    },
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=K&patient=S8003610",
+     "returned": 20,
+     "total_stated": null,
+     "next_page_link": true,
+     "rows": [
+      {
+       "taken": "2023-11-12T05:15:00+00:00",
+       "value": 3.3
+      },
+      {
+       "taken": "2023-11-10T14:27:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-11T00:31:00+00:00",
+       "value": 3.4
+      },
+      {
+       "taken": "2023-09-14T16:31:00+00:00",
+       "value": 4.6
+      },
+      {
+       "taken": "2023-11-12T14:50:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-11T02:42:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-05-18T21:05:00+00:00",
+       "value": 4.3
+      },
+      {
+       "taken": "2023-11-11T14:45:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-10T23:03:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-11T01:33:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-11T09:33:00+00:00",
+       "value": 3.3
+      },
+      {
+       "taken": "2023-11-11T23:38:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-10T22:40:00+00:00",
+       "value": 3.8
+      },
+      {
+       "taken": "2023-11-10T23:22:00+00:00",
+       "value": 3.3
+      },
+      {
+       "taken": "2023-11-13T03:00:00+00:00",
+       "value": 3.2
+      },
+      {
+       "taken": "2023-11-10T20:36:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-10T21:44:00+00:00",
+       "value": 3.4
+      },
+      {
+       "taken": "2023-04-24T20:27:00+00:00",
+       "value": 4.3
+      },
+      {
+       "taken": "2023-11-12T23:13:00+00:00",
+       "value": 2.8
+      },
+      {
+       "taken": "2023-11-12T10:24:00+00:00",
+       "value": 3.8
+      }
+     ]
+    },
+    {
+     "action": "POST",
+     "url": "http://localhost:8080/fhir/MedicationRequest",
+     "payload": {
+      "resourceType": "MedicationRequest",
+      "medicationCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/ndc",
+         "code": "40032-917-01",
+         "display": "Potassium replacement oral"
+        }
+       ],
+       "text": "Potassium replacement oral"
+      },
+      "authoredOn": "2023-11-13T10:15:00+00:00",
+      "dosageInstruction": [
+       {
+        "route": {
+         "text": "oral"
+        },
+        "doseAndRate": [
+         {
+          "doseQuantity": {
+           "value": 30,
+           "unit": "mEq"
+          }
+         }
+        ]
+       }
+      ],
+      "status": "active",
+      "intent": "order",
+      "subject": {
+       "reference": "Patient/S8003610"
+      }
+     }
+    },
+    {
+     "action": "POST",
+     "url": "http://localhost:8080/fhir/ServiceRequest",
+     "payload": {
+      "resourceType": "ServiceRequest",
+      "code": {
+       "coding": [
+        {
+         "system": "http://loinc.org",
+         "code": "2823-3",
+         "display": "Serum potassium level"
+        }
+       ]
+      },
+      "authoredOn": "2023-11-13T10:15:00+00:00",
+      "status": "active",
+      "intent": "order",
+      "priority": "stat",
+      "subject": {
+       "reference": "Patient/S8003610"
+      },
+      "occurrenceDateTime": "2023-11-14T08:00:00+00:00"
+     }
+    },
+    {
+     "action": "FINISH",
+     "text": "FINISH([\"Patient S8003610's most recent potassium level was 3.2 mmol/L on 2023-11-13T03:00:00+00:00, which is low (goal 3.5). Deficit 0.3 mmol/L \u2192 ordered 30 mEq oral potassium replacement (NDC 40032-917-01). Also ordered a morning serum potassium level (LOINC 2823-3) for 2023-11-14T08:00:00+00:00.\"])"
+    }
+   ],
+   "matched_statement": false,
+   "relaxed_pass": false,
+   "released_pass": false,
+   "content_ok": false,
+   "outcome": "latest result never returned; dosed from the newest result it received",
+   "stanford_as_released": false,
+   "stanford_checks_failed": [
+    "route is the plain string oral",
+    "dose value"
+   ],
+   "closing_message": "a list holding one or more sentences"
+  },
+  {
+   "batch": "replace",
+   "label": "m01878",
+   "title": "Searched only under 2823-3",
+   "chosen_because": "the smallest potassium history on which the run searched only under the code 2823-3",
+   "patient_shown_as": "S8001878",
+   "results_in_chart": 2,
+   "required": {
+    "outcome": "replace",
+    "dose_mEq": 10
+   },
+   "chart": [
+    {
+     "n": 1,
+     "taken": "2023-11-07T12:53:00+00:00",
+     "value": 4.2,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 2,
+     "taken": "2023-11-13T10:15:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": true
+    }
+   ],
+   "turns": [
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=2823-3&patient=S8001878",
+     "returned": 0,
+     "total_stated": 0,
+     "next_page_link": false,
+     "rows": []
+    },
+    {
+     "action": "FINISH",
+     "text": "FINISH([\"No serum potassium level (LOINC 2823-3) was found for patient S8001878, so the most recent potassium level could not be determined. Consequently, no potassium replacement order was placed and no follow-up morning serum potassium level was scheduled.\"])"
+    }
+   ],
+   "matched_statement": false,
+   "relaxed_pass": false,
+   "released_pass": false,
+   "content_ok": false,
+   "outcome": "never searched by the code K; received no potassium result",
+   "stanford_as_released": false,
+   "stanford_checks_failed": [],
+   "closing_message": "a list holding one or more sentences"
+  },
+  {
+   "batch": "replace",
+   "label": "m00056",
+   "title": "A potassium history that fits on one page; pass",
+   "chosen_because": "the passing run whose potassium history is closest to 12 results, a size chosen to show a history that fits on one page",
+   "patient_shown_as": "S8000056",
+   "results_in_chart": 12,
+   "required": {
+    "outcome": "replace",
+    "dose_mEq": 70
+   },
+   "chart": [
+    {
+     "n": 1,
+     "taken": "2023-11-13T02:15:00+00:00",
+     "value": 2.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 2,
+     "taken": "2023-11-12T23:10:00+00:00",
+     "value": 2.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 3,
+     "taken": "2023-11-13T09:31:00+00:00",
+     "value": 2.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": true
+    },
+    {
+     "n": 4,
+     "taken": "2021-08-30T03:59:00+00:00",
+     "value": 4.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 5,
+     "taken": "2023-11-13T05:06:00+00:00",
+     "value": 2.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 6,
+     "taken": "2022-03-14T03:53:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 7,
+     "taken": "2023-11-13T07:27:00+00:00",
+     "value": 2.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 8,
+     "taken": "2023-11-13T00:54:00+00:00",
+     "value": 2.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 9,
+     "taken": "2022-10-30T07:49:00+00:00",
+     "value": 4.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 10,
+     "taken": "2022-09-05T03:47:00+00:00",
+     "value": 3.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 11,
+     "taken": "2023-07-04T04:30:00+00:00",
+     "value": 3.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 12,
+     "taken": "2023-11-06T05:37:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    }
+   ],
+   "turns": [
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=2823-3&patient=S8000056",
+     "returned": 0,
+     "total_stated": 0,
+     "next_page_link": false,
+     "rows": []
+    },
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=K&patient=S8000056",
+     "returned": 12,
+     "total_stated": 12,
+     "next_page_link": false,
+     "rows": [
+      {
+       "taken": "2023-11-13T02:15:00+00:00",
+       "value": 2.5
+      },
+      {
+       "taken": "2023-11-12T23:10:00+00:00",
+       "value": 2.5
+      },
+      {
+       "taken": "2023-11-13T09:31:00+00:00",
+       "value": 2.8
+      },
+      {
+       "taken": "2021-08-30T03:59:00+00:00",
+       "value": 4.7
+      },
+      {
+       "taken": "2023-11-13T05:06:00+00:00",
+       "value": 2.9
+      },
+      {
+       "taken": "2022-03-14T03:53:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-11-13T07:27:00+00:00",
+       "value": 2.9
+      },
+      {
+       "taken": "2023-11-13T00:54:00+00:00",
+       "value": 2.5
+      },
+      {
+       "taken": "2022-10-30T07:49:00+00:00",
+       "value": 4.4
+      },
+      {
+       "taken": "2022-09-05T03:47:00+00:00",
+       "value": 3.0
+      },
+      {
+       "taken": "2023-07-04T04:30:00+00:00",
+       "value": 3.9
+      },
+      {
+       "taken": "2023-11-06T05:37:00+00:00",
+       "value": 3.6
+      }
+     ]
+    },
+    {
+     "action": "POST",
+     "url": "http://localhost:8080/fhir/MedicationRequest",
+     "payload": {
+      "resourceType": "MedicationRequest",
+      "medicationCodeableConcept": {
+       "coding": [
+        {
+         "system": "http://hl7.org/fhir/sid/ndc",
+         "code": "40032-917-01",
+         "display": "Potassium replacement"
+        }
+       ],
+       "text": "Potassium oral repletion"
+      },
+      "authoredOn": "2023-11-13T10:15:00+00:00",
+      "dosageInstruction": [
+       {
+        "route": {
+         "text": "oral"
+        },
+        "doseAndRate": [
+         {
+          "doseQuantity": {
+           "value": 70,
+           "unit": "mEq"
+          }
+         }
+        ]
+       }
+      ],
+      "status": "active",
+      "intent": "order",
+      "subject": {
+       "reference": "Patient/S8000056"
+      }
+     }
+    },
+    {
+     "action": "POST",
+     "url": "http://localhost:8080/fhir/ServiceRequest",
+     "payload": {
+      "resourceType": "ServiceRequest",
+      "code": {
+       "coding": [
+        {
+         "system": "http://loinc.org",
+         "code": "2823-3",
+         "display": "Serum potassium"
+        }
+       ],
+       "text": "Morning serum potassium level"
+      },
+      "authoredOn": "2023-11-13T10:15:00+00:00",
+      "status": "active",
+      "intent": "order",
+      "priority": "stat",
+      "subject": {
+       "reference": "Patient/S8000056"
+      },
+      "occurrenceDateTime": "2023-11-14T08:00:00+00:00",
+      "note": {
+       "text": "Morning serum potassium level to be completed next day at 8am"
+      }
+     }
+    },
+    {
+     "action": "FINISH",
+     "text": "FINISH([\"Patient S8000056's most recent serum potassium was 2.8 mmol/L on 2023-11-13T09:31:00+00:00, which is low (goal 3.5 mmol/L). Calculated oral potassium replacement: 70 mEq (0.7 mmol/L below goal \u00d7 10 mEq per 0.1 mmol/L). A MedicationRequest for replacement potassium 70 mEq oral was placed. A paired ServiceRequest for morning serum potassium level on 2023-11-14 at 08:00 was also placed.\"])"
+    }
+   ],
+   "matched_statement": true,
+   "relaxed_pass": true,
+   "released_pass": false,
+   "content_ok": true,
+   "outcome": "matched; a reply held the latest result",
+   "stanford_as_released": false,
+   "stanford_checks_failed": [
+    "route is the plain string oral"
+   ],
+   "closing_message": "a list holding one or more sentences"
+  },
+  {
+   "batch": "notLow",
+   "label": "m00118",
+   "title": "No-action instance passed without the most recent result",
+   "chosen_because": "the smallest potassium history of more than 20 results on a no-action instance where the run submitted no order and no response contained the patient's most recent result",
+   "patient_shown_as": "S8000118",
+   "results_in_chart": 34,
+   "required": {
+    "outcome": "notLow",
+    "dose_mEq": null
+   },
+   "chart": [
+    {
+     "n": 1,
+     "taken": "2023-11-10T08:49:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 2,
+     "taken": "2023-11-11T08:13:00+00:00",
+     "value": 4.2,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 3,
+     "taken": "2023-10-30T20:13:00+00:00",
+     "value": 3.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 4,
+     "taken": "2023-10-21T09:16:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 5,
+     "taken": "2023-11-03T09:16:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 6,
+     "taken": "2023-10-29T23:55:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 7,
+     "taken": "2023-10-31T18:02:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 8,
+     "taken": "2023-11-12T21:09:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 9,
+     "taken": "2023-11-01T08:17:00+00:00",
+     "value": 4.1,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 10,
+     "taken": "2023-11-10T21:24:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 11,
+     "taken": "2023-11-08T20:59:00+00:00",
+     "value": 4.2,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 12,
+     "taken": "2023-11-05T06:57:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 13,
+     "taken": "2023-11-02T06:59:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 14,
+     "taken": "2023-11-05T20:20:00+00:00",
+     "value": 4.1,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 15,
+     "taken": "2023-11-02T20:24:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 16,
+     "taken": "2023-11-10T11:42:00+00:00",
+     "value": 5.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 17,
+     "taken": "2023-10-31T08:09:00+00:00",
+     "value": 3.9,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 18,
+     "taken": "2023-10-30T07:41:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 19,
+     "taken": "2023-11-09T21:46:00+00:00",
+     "value": 4.2,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 20,
+     "taken": "2023-11-12T08:48:00+00:00",
+     "value": 4.2,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": true,
+     "latest": false
+    },
+    {
+     "n": 21,
+     "taken": "2023-11-09T08:55:00+00:00",
+     "value": 4.1,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 22,
+     "taken": "2023-11-03T20:05:00+00:00",
+     "value": 3.7,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 23,
+     "taken": "2023-11-06T07:58:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 24,
+     "taken": "2023-10-29T12:01:00+00:00",
+     "value": 3.4,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 25,
+     "taken": "2023-11-06T21:13:00+00:00",
+     "value": 4.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 26,
+     "taken": "2023-11-04T20:37:00+00:00",
+     "value": 4.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 27,
+     "taken": "2023-11-11T20:59:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 28,
+     "taken": "2023-11-07T06:53:00+00:00",
+     "value": 4.0,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 29,
+     "taken": "2023-11-04T08:11:00+00:00",
+     "value": 4.2,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 30,
+     "taken": "2023-10-21T09:18:00+00:00",
+     "value": 3.8,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 31,
+     "taken": "2023-11-08T08:11:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 32,
+     "taken": "2023-11-01T22:26:00+00:00",
+     "value": 3.5,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 33,
+     "taken": "2023-11-08T00:57:00+00:00",
+     "value": 4.6,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": false
+    },
+    {
+     "n": 34,
+     "taken": "2023-11-13T09:00:00+00:00",
+     "value": 4.3,
+     "unit": "mmol/L",
+     "status": "final",
+     "first_page": false,
+     "latest": true
+    }
+   ],
+   "turns": [
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=2823-3&patient=S8000118",
+     "returned": 0,
+     "total_stated": 0,
+     "next_page_link": false,
+     "rows": []
+    },
+    {
+     "action": "GET",
+     "request": "GET http://localhost:8080/fhir/Observation?code=K&patient=S8000118",
+     "returned": 20,
+     "total_stated": null,
+     "next_page_link": true,
+     "rows": [
+      {
+       "taken": "2023-11-10T08:49:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-11T08:13:00+00:00",
+       "value": 4.2
+      },
+      {
+       "taken": "2023-10-30T20:13:00+00:00",
+       "value": 3.6
+      },
+      {
+       "taken": "2023-10-21T09:16:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-03T09:16:00+00:00",
+       "value": 3.8
+      },
+      {
+       "taken": "2023-10-29T23:55:00+00:00",
+       "value": 3.8
+      },
+      {
+       "taken": "2023-10-31T18:02:00+00:00",
+       "value": 3.4
+      },
+      {
+       "taken": "2023-11-12T21:09:00+00:00",
+       "value": 4.3
+      },
+      {
+       "taken": "2023-11-01T08:17:00+00:00",
+       "value": 4.1
+      },
+      {
+       "taken": "2023-11-10T21:24:00+00:00",
+       "value": 4.3
+      },
+      {
+       "taken": "2023-11-08T20:59:00+00:00",
+       "value": 4.2
+      },
+      {
+       "taken": "2023-11-05T06:57:00+00:00",
+       "value": 4.3
+      },
+      {
+       "taken": "2023-11-02T06:59:00+00:00",
+       "value": 4.0
+      },
+      {
+       "taken": "2023-11-05T20:20:00+00:00",
+       "value": 4.1
+      },
+      {
+       "taken": "2023-11-02T20:24:00+00:00",
+       "value": 3.7
+      },
+      {
+       "taken": "2023-11-10T11:42:00+00:00",
+       "value": 5.0
+      },
+      {
+       "taken": "2023-10-31T08:09:00+00:00",
+       "value": 3.9
+      },
+      {
+       "taken": "2023-10-30T07:41:00+00:00",
+       "value": 3.5
+      },
+      {
+       "taken": "2023-11-09T21:46:00+00:00",
+       "value": 4.2
+      },
+      {
+       "taken": "2023-11-12T08:48:00+00:00",
+       "value": 4.2
+      }
+     ]
+    },
+    {
+     "action": "FINISH",
+     "text": "FINISH([\"Patient S8000118's most recent potassium level was 4.3 mmol/L (effective 2023-11-12T21:09:00+00:00), which is within normal range and above the 3.5 mmol/L goal. No potassium replacement order was placed, and therefore no paired morning serum potassium level was ordered.\"])"
+    }
+   ],
+   "matched_statement": true,
+   "relaxed_pass": true,
+   "released_pass": false,
+   "content_ok": true,
+   "outcome": "matched (no order); no reply held the latest result",
+   "stanford_as_released": false,
+   "stanford_checks_failed": [],
+   "closing_message": "a list holding one or more sentences"
+  }
+ ]
+}
