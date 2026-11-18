@@ -5,6 +5,8 @@ from datetime import datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 REPO = "https://github.com/wcook04/medagentbench-reader"
+SITE_URL = "https://wcook04.github.io/medagentbench-reader/"
+PDF = "medagentbench-potassium-task.pdf"   # written next to index.html by site/make_pdf.py
 BENCH = "https://github.com/stanfordmlgroup/MedAgentBench/blob/99260117137b09f04837a8c18d18a1107efa55ae"
 
 

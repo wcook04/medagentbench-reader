@@ -2,7 +2,7 @@
 
 MedAgentBench's potassium task asks an agent to check a patient's most recent potassium result and, if it is low, to submit two orders. A scripted baseline that reads only the first page of search results passes Stanford's grader on all 30 released instances of the task, although on 12 of them that page does not contain the patient's most recent result: on those 12, an older result leads to the same action. This repository derives 629 further instances from the benchmark's own records, all of which require the orders, and the same baseline passes 299 of them. The outcome expected on each derived instance comes from a Lean specification of the task's instruction, and Lean proved that the reference implementation meets that specification for every list of results.
 
-**Read the page: [wcook04.github.io/medagentbench-reader](https://wcook04.github.io/medagentbench-reader/).** This is a prototype. No one outside the study has reviewed it, and corrections are welcome as issues on this repository.
+**Read the page: [wcook04.github.io/medagentbench-reader](https://wcook04.github.io/medagentbench-reader/)**, or the same text as a [44-page PDF](https://wcook04.github.io/medagentbench-reader/medagentbench-potassium-task.pdf) with the references. This is a prototype. No one outside the study has reviewed it, and corrections are welcome as issues on this repository.
 
 [MedAgentBench](https://doi.org/10.1056/AIdbp2500144) (Jiang and coauthors, Stanford) evaluates language-model agents on clinical tasks in a simulated electronic health record. Its potassium replacement task, task 9, has 30 instances, and on 29 of them Stanford's grader requires no order. This repository follows that one task from its instruction to its grading code. The page in `site/` reports the results, and every number on it is read from `results/*.json`.
 
@@ -49,7 +49,7 @@ Asked to write the whole task once as a Python program from the task text and th
 | `study/whole_task.py` | Asks the model for a program that does the whole task with the agent's tools, and scores each program on every derived instance. |
 | `study/programs.py` | An earlier experiment, not on the page: the model writes the dose calculation alone as a Python function, and each function is compared with the reference implementation. |
 | `results/` | Aggregate results. `results/runs_table.csv` has one row per model run in the main conditions, with its searches, its verdicts and its class in the error analysis, and no patient values. `results/whole_task_programs/` and `results/programs/` hold the model-written programs, unedited. |
-| `site/` | The page and its build script. |
+| `site/` | The page and its build script. `site/make_pdf.py` prints the page to `site/medagentbench-potassium-task.pdf` with Chromium, using the print rules at the end of `site/page.css`. |
 
 ## What is not in the repository
 

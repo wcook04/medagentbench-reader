@@ -18,12 +18,12 @@
   --map-pass: #dcebdf;
   --map-miss: #3a3340;
   --map-older: #8a6a3a;
-  --col: 35rem;        /* the text measure */
-  --wide: 52rem;       /* tables and figures */
+  --col: 40rem;        /* the text measure: about 83 characters of the 19px serif */
+  --wide: 60rem;       /* tables and figures */
   --box: 24px;         /* inner padding of every boxed panel */
   --col-in: calc(var(--col) - var(--box) - 1px);   /* the text measure inside a box, so its text ends on the column's edge */
-  --col-sans: 29rem;   /* the measure of sans notes, captions and references: 15px sans at --col would run past 80 characters */
-  /* Type scale. Serif: 18 body, 16 summary, 19.2 h3, 25.6 h2, title. Sans: 13 labels, 14 interface and
+  --col-sans: 30rem;   /* the measure of sans notes, captions and references: 15px sans at --col would run past 80 characters */
+  /* Type scale. Serif: 19 body, 16 summary, 19.2 h3, 25.6 h2, title. Sans: 13 labels, 14 interface and
      table heads, 15 tables, notes, captions and references. */
   --t-label: 0.8125rem;
   --t-ui: 0.875rem;
@@ -37,17 +37,19 @@
   :root:not([data-theme="light"]) { --ok: #8fcfae; --ok-wash: #1f3a2d; --fail-wash: #48261f; --map-pass: #2f4a3c; --map-miss: #7b7489; --map-older: #b89562; }
 }
 
-html { scroll-padding-top: calc(var(--bar) + 20px); scroll-behavior: smooth; }
+/* Every length on the page is in rem, so the whole layout grows with the window: 16px up to a 1430px
+   window, 17.3px at 1728 and 18.4px from about 2000. The number of characters on a line does not change. */
+html { font-size: clamp(100%, calc(62.5% + 0.42vw), 115%); scroll-padding-top: calc(var(--bar) + 20px); scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 html, body { height: auto; }
-body { font-family: var(--font-serif); font-size: 1.125rem; line-height: 1.62; }
+body { font-family: var(--font-serif); font-size: 1.1875rem; line-height: 1.62; }
 
 .skip { position: absolute; left: -999px; top: 8px; background: var(--surface); padding: 6px 10px; border-radius: 4px; z-index: 60; font-family: var(--font-sans); }
 .skip:focus { left: 16px; }
 
 /* ---- top bar */
 .top { position: sticky; top: 0; z-index: 40; background: var(--ground); border-bottom: 1px solid var(--rule-strong); font-family: var(--font-sans); }
-.top__in { max-width: 76rem; margin: 0 auto; padding: 0 24px; min-height: var(--bar); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.top__in { max-width: 82rem; margin: 0 auto; padding: 0 24px; min-height: var(--bar); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .lockup { display: inline-flex; align-items: center; gap: 12px; min-width: 0; }
 .lockup__home { display: inline-flex; flex: none; }
 .lockup__name { color: var(--ink); text-decoration: none; font-family: var(--font-serif); font-size: 1.0625rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -58,7 +60,7 @@ body { font-family: var(--font-serif); font-size: 1.125rem; line-height: 1.62; }
 .theme:hover { color: var(--ink); background: var(--hover-wash); }
 
 /* ---- layout: contents on the left, article on the right */
-.layout { max-width: 76rem; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: var(--toc) minmax(0, 1fr); gap: 56px; align-items: start; }
+.layout { max-width: 82rem; margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: var(--toc) minmax(0, 1fr); gap: 56px; align-items: start; }
 .toc { position: sticky; top: calc(var(--bar) + 28px); max-height: calc(100vh - var(--bar) - 48px); overflow-y: auto; font-family: var(--font-sans); font-size: var(--t-ui); line-height: 1.35; padding: 4px 0 24px; }
 .toc__h { margin: 0 0 10px; font-weight: 600; color: var(--ink); padding: 0; list-style: none; cursor: default; pointer-events: none; }
 .toc__h::-webkit-details-marker { display: none; }
@@ -395,8 +397,28 @@ a.term:hover, a.term:focus-visible { color: var(--ink); text-decoration-color: v
   .m__p { text-align: left; }
   .tbl--main th, .tbl--main thead th:not(.num) { width: auto; }
 }
+/* ---- print: the typeset PDF made by site/make_pdf.py. A4, one column, light colours, every run shown. */
+.print-only { display: none; }
 @media print {
-  .top, .toc, .theme { display: none; }
-  .layout { display: block; }
+  @page { size: A4; margin: 19mm 22mm 20mm 22mm; }
+  :root, :root[data-theme="dark"] { --ground: #ffffff; --surface: #fbf8f2; --col: 100%; --wide: 100%; --col-sans: 100%; --col-in: 100%; }
+  html { font-size: 12.5px; }
+  body { background: #ffffff; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .top, .toc, .theme, .skip, .actions, .casetabs, .map__bar, .map__panel, .term-tip, .foot { display: none !important; }
+  .print-only { display: block; }
+  .layout { display: block; max-width: none; padding: 0; }
+  main { padding: 0; }
+  h1 { font-size: 27px; }
+  main > section { margin-top: 26px; }
   .case[hidden] { display: block !important; }
+  .case { margin-top: 24px; }
+  a, a.term { text-decoration: none; }
+  h1, h2, h3, h4, caption, .case__title, .map__h { break-after: avoid; }
+  figure, .lead, tr, ol.findings > li, .gl, dl.scores > div, ol.refs > li, ol.steps > li, .fig-key, .map__key { break-inside: avoid; }
+  thead { display: table-header-group; }
+  .tablewrap, .figscroll, pre { overflow: visible !important; }
+  pre, details.msgs pre { max-height: none !important; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 9px; line-height: 1.4; }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
 }
