@@ -718,6 +718,21 @@ def summary():
 </section>"""
 
 
+def paper_abstract():
+    """The structured abstract of the PDF edition (site/make_pdf.py). It is kept in the page inside a
+    <template>, which a browser does not display, so that its numbers come from the same results files."""
+    fp, ar = BD["first_page_baseline"]["replace"]["pass"], BD["full_chart_baseline"]["replace"]["pass"]
+    assert fp == FP_GOT + FP_SAME and ar == N
+    first_only = REL["by_search"]["searched_K_and_read_the_first_page_only"]["runs"]
+    return f"""
+<template id="paper-abstract">
+  <p><b>Background.</b> MedAgentBench is a benchmark for language-model agents that work in a simulated electronic health record. In its potassium task the agent is asked to look up a patient’s most recent potassium result and, if it is below 3.5&nbsp;mmol/L, to order replacement potassium and a repeat test. The benchmark’s record server returns the results of a search 20 to a page, in an order that is not date order.</p>
+  <p><b>Methods.</b> Two scripts with no language model were scored by the grader released with the benchmark: one reads only the first page of a single search, and the other is the same script with a search that requests every result. They were run on the benchmark’s 30 instances of the task and on {N} further instances that require the orders, derived from the benchmark’s own records. One language model, {MODEL}, was run on the same {N} instances with the benchmark’s prompt. The task’s instruction was written as a formal specification in Lean.</p>
+  <p><b>Results.</b> The first-page script passes all 30 released instances, and on {OFF30} of them the patient’s most recent result is not on the first page. On the {N} derived instances it passes {fp}, and the script that requests every result passes all {N}. The model requested only the first page of its potassium search in {first_only} of {N} runs. It passed {REL["matched"]} under the released grader with two format checks relaxed, and none under the grader as released. Under the task’s dosing rule, {EV["decisions_over_20_mEq"]} of the {N} instances require a single dose above 20&nbsp;mEq.</p>
+  <p><b>Conclusions.</b> On the released instances of this task the grader gives the same score to a script that retrieves the patient’s most recent result and to a script that does not. Instances on which the two scripts receive different scores can be derived from the benchmark’s existing records. No clinician has reviewed this work.</p>
+</template>"""
+
+
 def shortcut():
     fpd, nad, ard = BD["first_page_baseline"], BD["null_agent"], BD["full_chart_baseline"]
     mp = lambda x: f"{100 * x:.0f}%"  # noqa: E731
@@ -849,6 +864,7 @@ def page():
   <p class="note">Terms with a dotted underline in the text link here. On a screen with a pointer, the definition appears when the pointer rests on a term.</p>
   {glossary_html()}
 </section>
+{paper_abstract()}
 <footer class="foot"><span>Will Cook, 18 November 2026</span><a href="{PDF}">Read as a PDF</a><a class="ext" href="{REPO}">Code, proofs and data</a><a href="#made">How this was made</a><a href="#top">Back to the top</a></footer>
 </main>
 </div>

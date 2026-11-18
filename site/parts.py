@@ -280,14 +280,27 @@ def fig_chart(ex, w=720, h=226, on_label="in a response the agent received", off
                      f'<text class="t-num" x="{xx:.1f}" y="{base + 27}" text-anchor="middle">{"0" if d == 0 else f"−{d}"}</text>')
         d += stepd
     order = sorted(range(len(rows)), key=lambda i: (rows[i]["latest"], (rows[i]["taken"], rows[i]["value"]) in seen))
+
+    def label_y(i, text):
+        """The line for the label of the most recent result: of the lines just below and just above the
+        point, and then further away, the one on which the label covers the fewest other points."""
+        px, py = xs(t[i]), ys(rows[i]["value"])
+        x1, x0 = px - 14, px - 14 - 6.6 * len(text)
+        others = [(xs(t[j]), ys(rows[j]["value"])) for j in range(len(rows)) if j != i]
+        covered = lambda y: sum(1 for ox, oy in others if x0 - 6 <= ox <= x1 + 6 and y - 16 <= oy <= y + 9)  # noqa: E731
+        steps = ([22, -14] if py < base - 30 else [-14, 22]) + [36, -28, 50, -42]
+        lines = [py + s for s in steps if top + 10 <= py + s <= base + 2]
+        return min(lines, key=lambda y: (covered(y), lines.index(y)))
+
     for i in order:
         r = rows[i]
         on = (r["taken"], r["value"]) in seen
         ago = (hi - t[i]) / 86400
         parts.append(f'<circle class="{"dot dot--on" if on else "dot"}" cx="{xs(t[i]):.1f}" cy="{ys(r["value"]):.1f}" r="5"><title>{r["value"]} mmol/L, {ago:.1f} days before the patient’s most recent result, {on_label if on else off_label}</title></circle>')
         if r["latest"]:
+            label = f'the patient’s most recent result, {r["value"]} mmol/L'
             parts.append(f'<circle class="dot-ring" cx="{xs(t[i]):.1f}" cy="{ys(r["value"]):.1f}" r="10"/>')
-            parts.append(f'<text class="t-strong" x="{xs(t[i]) - 14:.1f}" y="{ys(r["value"]) + (22 if ys(r["value"]) < base - 30 else -14):.1f}" text-anchor="end">the patient’s most recent result, {r["value"]} mmol/L</text>')
+            parts.append(f'<text class="t-strong" x="{xs(t[i]) - 14:.1f}" y="{label_y(i, label):.1f}" text-anchor="end">{label}</text>')
     got = sum(1 for r in rows if (r["taken"], r["value"]) in seen)
     key = (f'<p class="fig-key"><span class="key"><i class="kdot kdot--on"></i>{on_label}</span><span class="key"><i class="kdot"></i>{off_label}</span>'
            '<span class="key"><i class="kdot kdot--ring"></i>the patient’s most recent result</span></p>'
