@@ -51,7 +51,14 @@ body { font-family: var(--font-serif); font-size: 1.1875rem; line-height: 1.62; 
 .top { position: sticky; top: 0; z-index: 40; background: var(--ground); border-bottom: 1px solid var(--rule-strong); font-family: var(--font-sans); }
 .top__in { max-width: 82rem; margin: 0 auto; padding: 0 24px; min-height: var(--bar); display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .lockup { display: inline-flex; align-items: center; gap: 12px; min-width: 0; }
-.lockup__home { display: inline-flex; flex: none; }
+.lockup__home { display: inline-flex; align-items: center; gap: 0.5rem; flex: none; height: 2.1rem; padding: 0 0.55rem 0 0.25rem; margin-left: -0.25rem; border-radius: 9px; color: var(--ink); text-decoration: none; transition: background-color 160ms ease; }
+.lockup__home img { display: block; flex: none; width: 1.5rem; height: 1.5rem; }
+/* "Will Cook" beside the plait, as on every site in the family (wcook04.github.io assets/family/family.css). */
+.lockup__owner { font-family: var(--font-sans); font-size: 1.02rem; font-weight: 650; line-height: 1; letter-spacing: 0.005em; white-space: nowrap; color: var(--ink); }
+@media (hover: hover) and (pointer: fine) { .lockup__home:hover { background: var(--hover-wash); } }
+.lockup__home:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.lockup__rule { flex: none; width: 1px; height: 1.35rem; background: var(--rule-strong); }
+@media (max-width: 420px) { .lockup { gap: 0.5rem; } .lockup__owner { font-size: 0.95rem; } }
 .lockup__name { color: var(--ink); text-decoration: none; font-family: var(--font-serif); font-size: 1.0625rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .top__tools { display: inline-flex; align-items: center; gap: 4px; font-size: var(--fs-ui); }
 .top__link { color: var(--ink-2); text-decoration: none; padding: 6px 10px; border-radius: 4px; }
