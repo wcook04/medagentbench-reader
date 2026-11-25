@@ -824,10 +824,16 @@ def page():
 <link rel="icon" href="plectis.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/plectis-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/plectis-sans.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+try {{
+  var theme = localStorage.getItem("medagentbench-reader-theme");
+  if (theme === "light" || theme === "dark") document.documentElement.setAttribute("data-theme", theme);
+}} catch (error) {{}}
+</script>
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="base.css">
 <link rel="stylesheet" href="page.css">
-<script src="theme-init.js"></script>
+<script defer src="page.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the article</a>
@@ -869,14 +875,11 @@ def page():
 <footer class="foot"><span>Will Cook, 18 November 2026</span><a href="{PDF}">Read as a PDF</a><a class="ext" href="{REPO}">Code, proofs and data</a><a href="#made">How this was made</a><a href="#top">Back to the top</a></footer>
 </main>
 </div>
-<script src="page.js"></script>
 </body>
 </html>
 """
 
 
 if __name__ == "__main__":
-    open(os.path.join(HERE, "theme-init.js"), "w").write(
-        'try { var s = localStorage.getItem("medagentbench-reader-theme"); if (s === "light" || s === "dark") document.documentElement.setAttribute("data-theme", s); } catch (e) {}\n')
     open(os.path.join(HERE, "index.html"), "w").write(page())
     print("wrote site/index.html")

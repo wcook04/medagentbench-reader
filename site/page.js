@@ -54,17 +54,20 @@
   var byId = {};
   links.forEach(function (a) { byId[a.getAttribute("href").slice(1)] = a; });
   var sections = links.map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); }).filter(Boolean);
+  var activeSection = null;
   function mark() {
     var y = window.scrollY + Math.max(120, window.innerHeight * 0.35), cur = sections[0];
     for (var i = 0; i < sections.length; i++) { if (sections[i].offsetTop <= y) cur = sections[i]; }
-    links.forEach(function (a) { a.removeAttribute("aria-current"); });
-    if (cur && byId[cur.id]) byId[cur.id].setAttribute("aria-current", "true");
+    if (cur === activeSection) return;
+    if (activeSection) byId[activeSection.id].removeAttribute("aria-current");
+    if (cur) byId[cur.id].setAttribute("aria-current", "true");
+    activeSection = cur;
   }
   var ticking = false;
   window.addEventListener("scroll", function () {
     if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; mark(); }); }
   }, { passive: true });
-  mark();
+  requestAnimationFrame(mark);
 
   /* ---- glossary hover cards. The definition text is read from the glossary at the foot of the page. */
   var tip = document.createElement("div");
@@ -108,10 +111,21 @@
     var cells = [].slice.call(map.querySelectorAll(".map__cells .c"));
     var detail = map.querySelector(".map__detail");
     var chosen = null;
+    var tabStop = cells[0];
+    var patients = new Map();
+    cells.forEach(function (cell) {
+      var patient = cell.dataset.p;
+      if (!patients.has(patient)) patients.set(patient, []);
+      patients.get(patient).push(cell);
+    });
+    var highlighted = null;
     var samePatient = function (c) {
-      var p = c ? c.getAttribute("data-p") : null;
-      cells.forEach(function (x) { x.classList.toggle("same", p !== null && x.getAttribute("data-p") === p); });
-      map.classList.toggle("hl", p !== null);
+      var patient = c ? c.dataset.p : null;
+      if (patient === highlighted) return;
+      if (highlighted !== null) patients.get(highlighted).forEach(function (cell) { cell.classList.remove("same"); });
+      if (patient !== null) patients.get(patient).forEach(function (cell) { cell.classList.add("same"); });
+      highlighted = patient;
+      map.classList.toggle("hl", patient !== null);
     };
     var describe = function (c) {
       var t = c.getAttribute("data-t"), cut = t.indexOf(". ");
@@ -125,10 +139,15 @@
       }
     };
     var choose = function (c) {
-      chosen = c;
       tip.hidden = true; current = null;
-      cells.forEach(function (x) { x.classList.toggle("sel", x === c); x.tabIndex = x === c ? 0 : -1; });
-      samePatient(c); describe(c);
+      samePatient(c);
+      if (chosen === c) return;
+      if (chosen) chosen.classList.remove("sel");
+      tabStop.tabIndex = -1;
+      c.classList.add("sel");
+      c.tabIndex = 0;
+      chosen = tabStop = c;
+      describe(c);
     };
     sw.forEach(function (x) {
       x.addEventListener("click", function () {

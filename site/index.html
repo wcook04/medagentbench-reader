@@ -11,10 +11,16 @@
 <link rel="icon" href="plectis.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/plectis-serif.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/plectis-sans.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+try {
+  var theme = localStorage.getItem("medagentbench-reader-theme");
+  if (theme === "light" || theme === "dark") document.documentElement.setAttribute("data-theme", theme);
+} catch (error) {}
+</script>
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="base.css">
 <link rel="stylesheet" href="page.css">
-<script src="theme-init.js"></script>
+<script defer src="page.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to the article</a>
@@ -722,6 +728,5 @@ def Spec (now : Int) (obs : List Obs) : Outcome → Prop
 <footer class="foot"><span>Will Cook, 18 November 2026</span><a href="medagentbench-potassium-task.pdf">Read as a PDF</a><a class="ext" href="https://github.com/wcook04/medagentbench-reader">Code, proofs and data</a><a href="#made">How this was made</a><a href="#top">Back to the top</a></footer>
 </main>
 </div>
-<script src="page.js"></script>
 </body>
 </html>
