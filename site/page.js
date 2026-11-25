@@ -169,9 +169,20 @@
         } else {
           to = cells[(i + Number(step) + cells.length) % cells.length] || cells[0];
         }
-        if (to) choose(to);
+        if (to) { choose(to); reveal(to); }
       });
     });
+    /* a stepped-to square can lie under the sticky panel or below the screen: bring it just into the strip between them */
+    var panel = map.querySelector(".map__panel");
+    var reveal = function (c) {
+      if (!panel) return;
+      var r = c.getBoundingClientRect(), m = 12, d = 0;
+      var inset = parseFloat(getComputedStyle(panel).top);
+      var under = Number.isFinite(inset) ? inset + panel.offsetHeight + m : m;
+      if (r.top < under) d = r.top - under;
+      else if (r.bottom > window.innerHeight - m) d = r.bottom - window.innerHeight + m;
+      if (d) window.scrollTo(0, window.scrollY + d);
+    };
     map.addEventListener("mouseover", function (e) {
       var c = e.target.closest && e.target.closest(".map__cells .c");
       if (!c || matchMedia("(hover: none)").matches) return;
@@ -203,13 +214,17 @@
       else if (e.key === "Home") to = cells[0];
       else if (e.key === "End") to = cells[cells.length - 1];
       else if (e.key === "ArrowDown" || e.key === "ArrowUp") {
-        var r = c.getBoundingClientRect(), dir = e.key === "ArrowDown" ? 1 : -1, best = null, bestRow = null;
+        var r = c.getBoundingClientRect(), dir = e.key === "ArrowDown" ? 1 : -1, best = null, bestRow = null, bestDistance = Infinity;
         for (var j = i + dir; j >= 0 && j < cells.length; j += dir) {
           var q = cells[j].getBoundingClientRect();
           if (Math.abs(q.top - r.top) < 2) continue;
           if (bestRow === null) bestRow = q.top;
           if (Math.abs(q.top - bestRow) > 2) break;
-          if (best === null || Math.abs(q.left - r.left) < Math.abs(best.getBoundingClientRect().left - r.left)) best = cells[j];
+          var distance = Math.abs(q.left - r.left);
+          if (distance < bestDistance) {
+            best = cells[j];
+            bestDistance = distance;
+          }
         }
         to = best;
       }
